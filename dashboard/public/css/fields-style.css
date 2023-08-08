@@ -1,0 +1,72 @@
+/* Search bar input style*/
+input[type="searchP"] {
+    font-family: FontAwesome;
+}
+
+
+/*Checkbox style*/
+INPUT[type=checkbox]:focus
+{
+    outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+INPUT[type=checkbox]
+{
+    background-color: #DDD;
+    border-radius: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+}
+
+INPUT[type=checkbox]:checked
+{
+    background-color: #409fd6;
+    background: #409fd6 url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 3px 3px no-repeat;
+}
+
+ .fontCheck{
+    font-family: FontAwesome;
+}
+
+.file-select {          
+  position: relative;
+  display: inline-block;
+}
+ 
+
+/* Bottom template */
+.file-select::before {
+  background-color: #6c757d;
+  color: white;
+  display: flex;            
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Seleccionar'; /* testo por defecto */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;                
+}
+ 
+.file-select input[type="file"] {
+  opacity: 0;
+  width: 125px;
+  height: 31px;
+  display: inline-block; 
+  cursor: pointer;           
+}
+
+#src-file1::before {
+  content: 'File Upload';
+}
+
+  
+

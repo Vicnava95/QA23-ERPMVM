@@ -1,0 +1,345 @@
+h5{
+    font-weight: bold;
+}
+h4{
+    display: inline;
+}
+
+hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cardStyle{
+    margin-bottom: 7px;
+}
+.card-header{
+    padding: 0px;
+}
+.collapseTitle{
+    padding: 5px 0px 5px 12px;
+    white-space: normal;
+}
+.card-body{
+    padding: 5px 12px 5px 12px;
+}
+.container{
+    max-width: 2500px;
+}
+.list-group-item-action{
+    border: 0px;
+}
+
+.btn-back{
+    background-color: black;
+    color: #e4a627;
+    font-size: 15px;
+    font-weight: 800px !important;
+}
+
+.btn-back:hover{
+    background-color: #e4a627;
+    color: black;
+    font-size: 15px;
+    font-weight: 800px !important;
+}
+
+.btn-light{
+    width: 100%;
+    text-decoration: none;
+    background-color: white;
+}
+
+.btn-light:hover{
+    width: 100%;
+    text-decoration: none;
+    background-color: white;
+}
+
+.cardBodyDocuments{
+    border: white 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.badgeStatus{
+    margin-bottom: 3px;
+    text-decoration: none;
+}
+
+.badgeERP{
+    background-color: black;
+    color: #e4a627;
+    text-decoration: none;
+}
+
+.badgeERP:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+}
+
+.badgeERPButton{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #000000;
+    text-decoration: none;
+}
+
+.badgeERPButton:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+}
+
+.badgeERPCount{
+    background-color: black;
+    color: #e4a627;
+    text-decoration: none;
+}
+
+.badgePlus{
+    background-color: black;
+    color: #e4a627;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.badgePlus:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.permitLog{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.dropdownMobile{
+    text-decoration: none; 
+    color: black
+}
+
+#textCopy{
+    text-decoration: underline;
+    color: black;
+}
+
+.dataFinance{
+    margin-bottom: 0px; 
+}
+
+.dataFinanceX{
+    margin-bottom: 0px; 
+}
+
+.rowFinance{
+    margin-bottom: 8px;
+}
+
+.demo {
+    border:1px solid #C0C0C0;
+    border-collapse:collapse;
+    padding:5px;
+}
+
+.demo th {
+    border:1px solid #C0C0C0;
+    padding:5px;
+    background:#F0F0F0;
+    width: 16.67%;
+    text-align: center;
+}
+
+.demo td {
+    border:1px solid #C0C0C0;
+    padding:5px;
+    width: 16.67%;
+    text-align: center;
+}
+
+.tableLeft{
+    float: left;
+    width: 50%;
+}
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #6c757d;
+    left: 6px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+/* START CHECKBOX STYLE */
+.checkbox {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    line-height: 1.3em;
+}
+
+.checkbox input[type="checkbox"] {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+    margin-left: -20px;
+}
+.checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    width: 15px;
+    height: 15px;
+    transition: transform 0.28s ease;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+.checkbox label:after {
+content: '';
+    display: block;
+    width: 8px;
+    height: 4px;
+    background-color: black;
+    border-bottom: 2px solid #e4a627;
+    border-left: 2px solid #e4a627;
+    -webkit-transform: rotate(-45deg) scale(0);
+    transform: rotate(-45deg) scale(0);
+    transition: transform ease 0.25s;
+    will-change: transform;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+.checkbox input[type="checkbox"]:checked ~ label::before {
+    color: black;
+    background-color: black;
+}
+
+.checkbox input[type="checkbox"]:checked ~ label::after {
+    -webkit-transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1);
+    background-color: black;
+}
+
+.checkbox label {
+    min-height: 25px;
+    display: block;
+    padding-left: 25px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+    vertical-align: sub;
+}
+.checkbox label span {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: 0;
+}
+/* END CHECKBOX STYLE */
+
+/* Styles go here */
+.check-text input {
+    display: none;
+}
+.check-text input ~ span {
+    color: #333;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 2px;
+    font-weight: 200;
+}
+.check-text input:checked ~ .unchecked {
+    display: none;
+}
+.check-text input:checked ~ .checked {
+    display: inline-block;
+}
+
+.check-text input ~ .checked {
+    display: none;
+}
+.check-text input:disabled ~ span {
+    color: #999;
+    cursor: not-allowed;
+}
+.blackNwhite {
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+.formModalToDo{
+    margin-bottom: 5px;
+}
+#datepicker-container{
+    text-align:center;
+}
+#datepicker-center{
+    display:inline-block;
+    margin:0 auto;
+}
+/*  START MEDIA QUERY */
+/* Desktop */
+@media screen and (min-width: 1024px){
+    .mobile{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .mobile{
+        display: none;
+    }
+}
+
+/* Mobil */
+@media screen and (max-width: 767px){
+    .desktop{
+        display: none;
+    }
+    .colDate1{
+        padding-right: 5px;
+    }
+    .colDate2{
+        padding-left: 5px;
+    }
+    canvas{
+        width: 300px !important;
+        height: 300px !important;
+    }
+}
+
+/*  END MEDIA QUERY */

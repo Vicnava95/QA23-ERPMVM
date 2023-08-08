@@ -1,0 +1,83 @@
+h4{
+    text:inherit; 
+    color:#495057;
+}
+h6{
+    text:inherit; 
+    color:#495057;
+}
+
+dl {
+    margin: 0;
+}
+
+dt {
+    clear: left;
+    float: left;
+    padding: 0 0 2px;
+    font-weight: bold;
+}
+dd {
+    float: left;
+    margin-left: 10px;
+    padding: 0 0 2px;
+}
+.labelInfo{
+    color: #495057; 
+    font-size:12px; 
+    font-weight: bold;
+}
+.labelAddress{
+    color: #495057; 
+    font-size:20px; 
+    font-weight: bold;
+}
+.labelClientName{
+    color: #000000; 
+    font-size:15px; 
+    font-weight: bold;
+}
+.badgeERP{
+    background-color: black;
+    color: #e4a627;
+    text-decoration: none;
+}
+
+.badgeERP:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+}
+
+.badgeERPButton{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #000000;
+    text-decoration: none;
+}
+
+.badgeERPButton:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+}
+
+.container-fluid-a{
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .dropdown{
+        height: 23px;
+    }
+    .desktop{
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px){
+    .mobile{
+        display: none;
+    }
+}

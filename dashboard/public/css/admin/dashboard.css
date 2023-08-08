@@ -1,0 +1,132 @@
+h6{
+    margin-bottom: 0px;
+}
+.card-title{
+    margin-bottom: 0px;
+}
+.card{
+    margin-bottom: 10px;
+}
+.container2{
+    margin: 10px 3%;
+}
+.badgeERP{
+    background-color: black;
+    color: #e4a627;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+.badgeERP:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+}
+.inputsDate{
+    height: 25px; 
+    font-size: 13px;
+}
+.btn-ERP{
+    background-color: white;
+    border-color: black;
+}
+.btn-Secondary{
+    background: white;
+    color: black;
+    border-radius: 30px;
+}
+.gj-icon{
+    top: 3px !important;
+    bottom: 0px !important;
+}
+.labelDate{
+    margin-bottom: 0px; 
+    font-size:13px;
+}
+.carousel-control-prev{
+    padding-left:0px;
+    padding-right: 10%;
+}
+.carousel-control-next{
+    padding-right:0px;
+    padding-left: 10%;
+}
+.containerCarrousel{
+    display: flex;
+    flex-direction: row;
+}
+.gj-datepicker{
+    margin-right: 15px;
+}
+.responsiveText{
+    padding: 0px 12px;
+}
+.datepicker-container{
+    text-align:center;
+}
+.datepicker-center{
+    display:inline-block;
+    margin:0 auto;
+}
+
+/*  START MEDIA QUERY */
+/* Desktop */
+@media screen and (min-width: 1024px){
+    .hiddenDesktop{
+        display: none;
+    }
+    .responsiveText{
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .carousel-item{
+        /*max-height: 50%;*/
+    }
+    .percentRowSection2{
+        height: 50%;
+    }
+    #mobileDates{
+        display: none;
+    }
+    #mobileActions{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .hiddenDesktop{
+        display: none;
+    }
+    .responsiveText{
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .percentRowSection2{
+        height: 50%;
+    }
+    #mobileDates{
+        display: none;
+    }
+    #mobileActions{
+        display: none;
+    }
+}
+
+/* Mobil */
+@media screen and (max-width: 767px){
+    .responsiveText{
+        font-size: 12px;
+    }
+    .hiddenMobile{
+        display: none;
+    }
+    .percentRowSection2{
+        height: 150%;
+    }
+}
+/*  END MEDIA QUERY */
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg+xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E);
+    background-color: black;
+    border-radius: 5px;
+}

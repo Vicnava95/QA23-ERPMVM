@@ -1,0 +1,83 @@
+hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.col-md-6.offset-md-3{
+    padding: 0px;
+}
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #6c757d;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+.list-group-item-action{
+    border: 0px;
+}
+.infoMail{
+    margin-bottom: 0px;
+}
+.modalIcon{
+    padding: 3px; 
+    border-color: white;
+}
+.cardBodyDocuments{
+    background-color: #f8f9fa;
+    border: #f8f9fa 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.badgeERP{
+    background-color: black;
+    color: #e4a627;
+    text-decoration: none;
+}
+.badgeERP:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+}
+.badgeERPCount{
+    background-color: black;
+    color: #e4a627;
+    text-decoration: none;
+}
+.badgeERPButton{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #000000;
+    text-decoration: none;
+}
+
+.badgeERPButton:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+}
+.lineDocuments{
+    background-color: #f8f9fa;
+}

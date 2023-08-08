@@ -1,0 +1,76 @@
+h6{
+    margin: 0px;
+    font-size: 0.8rem;
+}
+.fila1Card{
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+.fila2Card{
+    padding-left: 5px;
+    padding-right: 0px;
+}
+.cardRow1{
+    margin-left: 0px;
+}
+
+.datepick{
+    height: 32px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.gj-icon{
+    top: 5px !important;
+    bottom: 0px !important;
+}
+.inputNumber{
+    height: 25px;
+    width: 35px;
+    text-align: center;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    margin-bottom: 8px;
+}
+.inputNumber2{
+    height: 25px;
+    width: 50px;
+    text-align: center;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    margin-bottom: 0px;
+}
+.card-body{
+    padding: 8px;
+}
+.card{
+    margin-bottom: 7px;
+}
+.headerTruck{
+    padding: 5px 8px;
+}
+.badgeERPButton{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #000000;
+    text-decoration: none;
+}
+
+.badgeERPButton:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }

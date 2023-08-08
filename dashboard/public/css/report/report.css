@@ -1,0 +1,102 @@
+.container-fluid-a{
+    margin-top: 15px;
+    margin: 10px;
+
+}
+.card-projects{
+    border-color: white;
+}
+td{
+    border-color: black;
+}
+li{
+    line-height: 0.5
+}
+.circulo-green {
+    width: 15px;
+    height: 15px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #28a745;
+}
+.circulo-yellow {
+    width: 15px;
+    height: 15px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffc107;
+}
+.circulo-red {
+    width: 15px;
+    height: 15px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #dc3545;
+}
+
+.circulo-gray {
+    width: 15px;
+    height: 15px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #6c757d;
+}
+
+.badgeERPButton{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #000000;
+    text-decoration: none;
+}
+
+.badgeERPButton:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+}
+
+/* Tamaño y estilo del título de reportes */
+#showDate{
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+#titulosResponsive{
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+blockquote.blockquote{
+    margin-bottom: 0px; 
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #showDate{
+        font-size: 1em;
+        cursor: pointer;
+        
+    }
+    #titulosResponsive{
+        font-size: 1.3em;
+    }
+    #hideNav{
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 999px) {
+    #hideDropdown{
+        display: none;
+    }
+}
+
+/* Ocultar */
+.ocultar{
+    display: none;
+}

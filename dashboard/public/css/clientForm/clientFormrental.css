@@ -1,0 +1,130 @@
+.alert{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.firstText{
+    font-family: 'TitiliumWeb', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+.secondText {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.border{
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-color: black;
+}
+.btn-sm{
+    font-size: 18px;
+    background-color: #e4a627;
+    color: black;
+    width: 150px;
+    border-radius: 8px;
+}
+.btn-sm:hover{
+    font-size: 18px;
+    color: white;
+    border-radius: 8px;
+}
+.btnSecondary{
+    font-size: 18px;
+    background-color: white;
+    border:1px solid #e4a627;
+    color: black;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 5px !important;
+    text-align: left;
+}
+.btnSecondary:hover{
+    font-size: 15px;
+    color: #e4a627;
+    border-radius: 8px;
+    background-color: black;
+}
+.selectStyle{
+    width: 150px; 
+    display: inline-block; 
+    text-align:center; 
+    font-size:15px;
+}
+.textColor{
+    color: #71787e !important;
+}
+.textColor:hover{
+    color: #71787e !important;
+    background: transparent;
+}
+.textSize{
+    font-size: 0.875rem;
+}
+.badge-secondary{
+    font-size: 10px; 
+    cursor: pointer;
+}
+.border-left-0{
+    border-top: 0 !important;
+    border-right: 0 !important;
+}
+.checkeable input {
+    display: none;
+}
+.checkeable img {
+    width: 100px;
+    border: 3px solid transparent;
+}
+.checkeable input {
+    display: none;
+}
+.checkeable input:checked  + img {
+    border-color: blue;
+}
+/* Desktop */
+@media screen and (min-width: 1024px){
+    .responsive {
+        width: 23%;
+        height: auto;
+    }
+    .info{
+        text-align: center;
+    }
+    .filaMachinery{
+        padding-left: 80px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .responsive {
+        width: 25%;
+        height: auto;
+    }
+    .info{
+        text-align: center;
+    }
+    .filaMachinery{
+        padding-left: 10px;
+    }
+}
+
+#service option:hover{
+    background-color: red !important;
+}
+
+/* Mobil */
+@media screen and (max-width: 767px){
+    .responsive {
+        width: 40%;
+        height: auto;
+    }
+    .info{
+        text-align: justify;
+    }
+    .firstText{
+        font-size: 28px;
+    }
+}

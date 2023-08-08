@@ -1,0 +1,236 @@
+.container-fluid-a{
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin: 10px;
+}
+
+h4{
+    text:inherit; 
+    color:#495057;
+}
+h6{
+    text:inherit; 
+    color:#495057;
+}
+
+dl {
+    margin: 0;
+}
+
+dt {
+    clear: left;
+    float: left;
+    padding: 0 0 2px;
+    font-weight: bold;
+}
+dd {
+    float: left;
+    margin-left: 10px;
+    padding: 0 0 2px;
+}
+.list-group-item-action{
+    padding: 5px 10px;
+
+}
+.listaModal{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.desktop{
+    margin-bottom: 0px;
+}
+
+.labelSold{
+    font-size: 15px; 
+    color:blue; 
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.labelBudget{
+    font-size: 15px; 
+    color:purple; 
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.labelSpent{
+    font-size: 15px; 
+    color:red; 
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.labelProfit{
+    font-size: 15px; 
+    color:#28a745; 
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.labelService{
+    font-size: 15px; 
+    color:#495057; 
+    margin: 0px; 
+    font-weight: bold
+}
+.labelClientName{
+    font-size: 15px; 
+    color:#495057; 
+    margin: 0px; 
+    font-weight: bold
+}
+.numeros{
+    color:#495057; 
+    margin: 0px;
+}
+.numerosX{
+    color:#495057; 
+    margin: 0px;
+}
+.badge .badge-secondary{
+    margin-bottom: 0px;
+}
+.badgeERP{
+    background-color: black;
+    color: #e4a627;
+}
+.badgeERP:hover{
+    background-color: #e4a627;
+    color: black;
+}
+
+.badgeERPButton{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #000000;
+    text-decoration: none;
+}
+
+.badgeERPButton:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+}
+
+.check-text input {
+    display: none;
+}
+.check-text input ~ span {
+    color: #333;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 2px;
+    font-weight: 200;
+}
+.check-text input:checked ~ .unchecked {
+    display: none;
+}
+.check-text input:checked ~ .checked {
+    display: inline-block;
+}
+
+.check-text input ~ .checked {
+    display: none;
+}
+.check-text input:disabled ~ span {
+    color: #999;
+    cursor: not-allowed;
+}
+.blackNwhite {
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .dropdown{
+        height: 23px;
+    }
+    .flex{
+        flex: inline ;
+        margin: 10px;
+        width: 100%;
+    }
+    .titulo{
+        font-size: 25px !important; 
+    }
+    .numeros{
+        font-size: 30px !important; 
+    }
+    .numerosX{
+        font-size: 30px !important; 
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .flex{
+        flex: block ;
+        margin: 10px;
+        width: 30%;
+    }
+    .titulo{
+        font-size: 20px !important; 
+    }
+    .numeros{
+        font-size: 25px !important; 
+    }
+    .numerosX{
+        font-size: 25px !important; 
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .flex{
+    flex: block ;
+    margin: 10px;
+    width: 18%;
+    }
+    .titulo{
+        font-size: 20px !important; 
+    }
+    .numeros{
+        font-size: 25px !important; 
+    }
+    .numerosX{
+        font-size: 25px !important; 
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .flex{
+    flex: block ;
+    margin: 10px;
+    width: 18%;
+    }
+    .titulo{
+        font-size: 20px !important; 
+    }
+    .numeros{
+        font-size: 25px !important; 
+    }
+    .numerosX{
+        font-size: 25px !important; 
+    }
+    
+}
+/* Desktop */
+@media screen and (min-width: 1024px){
+    .mobile{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .mobile{
+        display: none;
+    }
+}
+
+/* Mobil */
+@media screen and (max-width: 767px){
+    .desktop{
+        display: none;
+    }
+}

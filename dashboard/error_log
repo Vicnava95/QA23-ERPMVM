@@ -1,0 +1,8 @@
+[09-Dec-2021 19:18:05 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 75497472 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 90
+[09-Dec-2021 19:22:45 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 75497472 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 90
+[09-Dec-2021 19:23:16 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 75497472 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 90
+[09-Dec-2021 19:23:58 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 75497472 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 90
+[05-May-2022 17:18:24 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 75497472 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 90
+[11-May-2022 13:31:05 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 75497472 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 90
+[11-May-2022 13:38:02 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 67108872 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 83
+[06-Jul-2022 17:28:57 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 67108872 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 83

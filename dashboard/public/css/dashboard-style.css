@@ -1,0 +1,17 @@
+.card-body{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    vertical-align: middle;
+}
+h5.card-title{
+    vertical-align: middle;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .mobile-hide{
+        display: none;
+    }
+}

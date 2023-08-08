@@ -1,0 +1,197 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    padding: 5px 12px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:black;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    color: #e4a627;
+    background-color: black;
+}
+
+.activeItem{
+    text-decoration: none;
+    color: #e4a627;
+    background-color: black;
+}
+
+.activeItem:hover{
+    text-decoration: none;
+    color: black;
+    background-color: #e4a425;
+}
+
+.dot-active {
+    height: 10px;
+    width: 10px;
+    background-color: #28a745;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.dot-schedule {
+    height: 10px;
+    width: 10px;
+    background-color: #ffc107;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.dot-finish {
+    height: 10px;
+    width: 10px;
+    background-color: #dc3545;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.dot-paused {
+    height: 10px;
+    width: 10px;
+    background-color:  #6c757d;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.dot-permit {
+    height: 10px;
+    width: 10px;
+    background-color: #071aff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.dot-archived {
+    height: 10px;
+    width: 10px;
+    background-color: #ff07c1;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.barStatus{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.barStatusItem{
+    margin-left:12px;
+}
+
+.badgeERPButton{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #000000;
+    text-decoration: none;
+}
+
+.badgeERPButton:hover{
+    background-color: #e4a627;
+    color: black;
+    text-decoration: none;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+#customers tr:hover {background-color: #ddd;}
+  
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: #e4a425;
+}
+
+#customers .footerTable {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* RESPONSIVE DESIGN */
+/* Mobile */
+@media screen and (max-width: 600px){
+    .nav-link{
+        padding: 5px 12px;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+    }
+    .headcol {
+        position: absolute;
+        width: 5em;
+        left: 0;
+        top: auto;
+        border-top-width: 2px;
+        margin-top: -1px;
+      }
+    .headcol:before {
+    content: 'Row ';
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 601px){
+    .nav-link{
+        padding: 5px 12px;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+    }
+    .headcol {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 0;
+        top: auto;
+        border-top-width: 2px;
+        margin-top: -1px;
+    }
+    .headcol:before {
+    content: 'Row ';
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 992px) and (min-width: 769px){
+    .nav-link{
+        padding: 5px 12px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Large Screen */
+@media screen and (min-width: 1200px){
+    .nav-link{
+        padding: 5px 12px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}

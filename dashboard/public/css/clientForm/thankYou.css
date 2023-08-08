@@ -1,0 +1,61 @@
+.firstText{
+    font-family: 'TitiliumWeb', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+.secondText {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.textSize{
+    font-size: 0.875rem;
+}
+.badge-secondary{
+    font-size: 10px; 
+    cursor: pointer;
+}
+.border-left-0{
+    border-top: 0 !important;
+    border-right: 0 !important;
+}
+/* Desktop */
+@media screen and (min-width: 1024px){
+    .responsive {
+        width: 23%;
+        height: auto;
+    }
+    .info{
+        text-align: center;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .responsive {
+        width: 50%;
+        height: auto;
+    }
+    .info{
+        text-align: center;
+    }
+}
+
+#service option:hover{
+    background-color: red !important;
+}
+
+/* Mobil */
+@media screen and (max-width: 767px){
+    .responsive {
+        width: 40%;
+        height: auto;
+    }
+    .info{
+        text-align: justify;
+    }
+    .firstText{
+        font-size: 28px;
+    }
+}
