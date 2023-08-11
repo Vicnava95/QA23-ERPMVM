@@ -300,7 +300,7 @@ class PurchaseController extends Controller
                         if($percentPhase >= 100){
                             $mensaje = "Project: ".$project[0]->name_project.",\n Budget on Phase ".$phase[0]->name_phase. " has been exceeded.";
                             $TWILIO_SID='AC95dd1cfb53cae79cc24195835f06e8b1';
-                            $TWILIO_TOKEN='fb02139bd9647917f56def7008f9b739';
+                            $TWILIO_TOKEN='1aa7a38178458ffdb912cf67ff739a68';
                             $TWILIO_NUMBER='14752587010';
                             $marvinNumber = '13104099884';
                             $joselinNumber = '13109127546';
@@ -314,7 +314,7 @@ class PurchaseController extends Controller
                         }else if($percentPhase >= 80){
                             $mensaje = "Project: ".$project[0]->name_project.",\n".$percentPhase."% of the budget has been spent: ".$phase[0]->name_phase;
                             $TWILIO_SID='AC95dd1cfb53cae79cc24195835f06e8b1';
-                            $TWILIO_TOKEN='fb02139bd9647917f56def7008f9b739';
+                            $TWILIO_TOKEN='1aa7a38178458ffdb912cf67ff739a68';
                             $TWILIO_NUMBER='14752587010';
                             $marvinNumber = '13104099884';
                             $joselinNumber = '13109127546';
@@ -611,7 +611,7 @@ class PurchaseController extends Controller
            
                 $mensaje = "Project: ".$project->name_project."\nExpenses are $".number_format($diferenceBudget,2)."(".number_format($percentDiference,2)."%) over the budget.";
                 $TWILIO_SID='AC95dd1cfb53cae79cc24195835f06e8b1';
-                $TWILIO_TOKEN='fb02139bd9647917f56def7008f9b739';
+                $TWILIO_TOKEN='1aa7a38178458ffdb912cf67ff739a68';
                 $TWILIO_NUMBER='14752587010';
                 $marvinNumber = '13104099884';
                 //$joselinNumber = '13109127546';

@@ -598,7 +598,7 @@ class PermitTicketController extends Controller
         //$message = request('comments');
         
         $TWILIO_SID='AC95dd1cfb53cae79cc24195835f06e8b1';
-        $TWILIO_TOKEN='fb02139bd9647917f56def7008f9b739';
+        $TWILIO_TOKEN='1aa7a38178458ffdb912cf67ff739a68';
         $TWILIO_NUMBER='14752587822';
 
         //SMS TO MARVIN
@@ -678,7 +678,7 @@ class PermitTicketController extends Controller
         $message = "\n".$mensaje;
         
         $TWILIO_SID='AC95dd1cfb53cae79cc24195835f06e8b1';
-        $TWILIO_TOKEN='fb02139bd9647917f56def7008f9b739';
+        $TWILIO_TOKEN='1aa7a38178458ffdb912cf67ff739a68';
         $TWILIO_NUMBER='14752587822';
 
         //SMS TO MARVIN
@@ -749,7 +749,7 @@ class PermitTicketController extends Controller
         $message = "\n".$mensaje;
         
         $TWILIO_SID='AC95dd1cfb53cae79cc24195835f06e8b1';
-        $TWILIO_TOKEN='fb02139bd9647917f56def7008f9b739';
+        $TWILIO_TOKEN='1aa7a38178458ffdb912cf67ff739a68';
         $TWILIO_NUMBER='14752587822';
 
         //SMS TO MARVIN
@@ -963,7 +963,7 @@ class PermitTicketController extends Controller
         $mensaje = $msg;
         $clientNumber = str_replace(array('+','(',')',' ','-'),'',$numberPhone);
         $TWILIO_SID='AC95dd1cfb53cae79cc24195835f06e8b1';
-        $TWILIO_TOKEN='fb02139bd9647917f56def7008f9b739';
+        $TWILIO_TOKEN='1aa7a38178458ffdb912cf67ff739a68';
         $TWILIO_NUMBER='14752587010';
         $marvinNumber = '13104099884';
 
@@ -986,7 +986,7 @@ class PermitTicketController extends Controller
         $mensaje = $msg;
         $clientNumber = str_replace(array('+','(',')',' ','-'),'',$numberPhone);
         $TWILIO_SID='AC95dd1cfb53cae79cc24195835f06e8b1';
-        $TWILIO_TOKEN='fb02139bd9647917f56def7008f9b739';
+        $TWILIO_TOKEN='1aa7a38178458ffdb912cf67ff739a68';
         $TWILIO_NUMBER='14752587010';
         $marvinNumber = '13104099884';
 
@@ -1009,7 +1009,7 @@ class PermitTicketController extends Controller
         $mensaje = $msg;
         $clientNumber = str_replace(array('+','(',')',' ','-'),'',$numberPhone);
         $TWILIO_SID='AC95dd1cfb53cae79cc24195835f06e8b1';
-        $TWILIO_TOKEN='fb02139bd9647917f56def7008f9b739';
+        $TWILIO_TOKEN='1aa7a38178458ffdb912cf67ff739a68';
         $TWILIO_NUMBER='14752587010';
         $marvinNumber = '13104099884';
         
