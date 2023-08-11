@@ -602,11 +602,11 @@ class PermitTicketController extends Controller
         $TWILIO_NUMBER='14752587822';
 
         //SMS TO MARVIN
-        $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $smsToMarvin->messages->create($marvinNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $message
-        ]);
+        ]); */
 
         //SMS TO MIGUEL
         /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
@@ -616,11 +616,11 @@ class PermitTicketController extends Controller
         ]); */
 
         //SMS TO CLIENT
-        $client = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $client = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $client->messages->create($clientNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $message
-        ]);
+        ]); */
 
         /** Creación del contenido para el correo */
         /* $globalQuote = [
@@ -682,18 +682,18 @@ class PermitTicketController extends Controller
         $TWILIO_NUMBER='14752587822';
 
         //SMS TO MARVIN
-        $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $smsToMarvin->messages->create($marvinNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $message
-        ]);
+        ]); */
 
         //SMS TO CLIENT
-        $client = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $client = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $client->messages->create($clientNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $message
-        ]);
+        ]); */
 
         /** Creación del contenido para el correo */
         /* $globalQuote = [
@@ -753,18 +753,18 @@ class PermitTicketController extends Controller
         $TWILIO_NUMBER='14752587822';
 
         //SMS TO MARVIN
-        $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $smsToMarvin->messages->create($marvinNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $message
-        ]);
+        ]); */
 
         //SMS TO CLIENT
-        $client = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $client = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $client->messages->create($clientNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $message
-        ]);
+        ]); */
 
         /** Creación del contenido para el correo */
         /* $globalQuote = [
@@ -968,11 +968,11 @@ class PermitTicketController extends Controller
         $marvinNumber = '13104099884';
 
         //SMS TO CLIENT
-        $smsToClient = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $smsToClient = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $smsToClient->messages->create($clientNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $mensaje
-        ]);
+        ]); */
 
         return redirect()->back()->with('messagePoolDemo','SMS Sent');
     }
@@ -991,11 +991,11 @@ class PermitTicketController extends Controller
         $marvinNumber = '13104099884';
 
         //SMS TO CLIENT
-        $smsToClient = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $smsToClient = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $smsToClient->messages->create($clientNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $mensaje
-        ]);
+        ]); */
 
         return redirect()->back()->with('messageEquipment','SMS Sent');
     }
@@ -1014,11 +1014,11 @@ class PermitTicketController extends Controller
         $marvinNumber = '13104099884';
         
         //SMS TO CLIENT
-        $smsToClient = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $smsToClient = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $smsToClient->messages->create($clientNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $mensaje
-        ]);
+        ]); */
         return redirect()->back()->with('messageEstimate','SMS Sent');
     }
 

@@ -654,11 +654,11 @@ class ProjectController extends Controller
             //$diegoNumber = '13109127546';
 
             //SMS TO MARVIN
-            $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+            /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
             $smsToMarvin->messages->create($marvinNumber, [
                 'from' => $TWILIO_NUMBER,
                 'body' => $message
-            ]);
+            ]); */
         
         return view('Project/dropzoneProject',compact('project'));
         //return redirect()->route('project.active');             

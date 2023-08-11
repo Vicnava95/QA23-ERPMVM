@@ -220,15 +220,15 @@ class ProjectContactController extends Controller
         $marvinNumber = '13104099884';
         //$joselinNumber = '13109127546';
 
-        \Slack::send($message);
+        /* \Slack::send($message); */
         //\Slack::to('#project-comments')->send('Hi Testing!');
 
         //SMS TO MARVIN
-        $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $smsToMarvin->messages->create($marvinNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $message
-        ]);
+        ]); */
 
         //SMS TO JOSELIN
         /* $smsToJoselin = new Client($TWILIO_SID,$TWILIO_TOKEN);
@@ -681,15 +681,15 @@ class ProjectContactController extends Controller
         $marvinNumber = '13104099884';
         //$joselinNumber = '13109127546';
 
-        \Slack::send($message);
+        /* \Slack::send($message); */
         //\Slack::to('#project-comments')->send('Hi Testing!');
 
         //SMS TO MARVIN
-        $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $smsToMarvin->messages->create($marvinNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $message
-        ]);
+        ]); */
 
         //SMS TO JOSELIN
         /* $smsToJoselin = new Client($TWILIO_SID,$TWILIO_TOKEN);

@@ -129,11 +129,11 @@ class RentRequestController extends Controller
         $message = "\n Rental Confirmation: \nAddress: ".$address."\nEquipment: ".$machineryName."\nDate: ".$initialDay." - ".$finalDay."\nComments: ".$note;
 
         //SMS TO MARVIN
-        $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $smsToMarvin->messages->create($marvinNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $message
-        ]);
+        ]); */
 
         //SMS TO MIGUEL
         /* $smsToMiguel = new Client($TWILIO_SID,$TWILIO_TOKEN);
@@ -143,11 +143,11 @@ class RentRequestController extends Controller
         ]); */
 
         //SMS TO CLIENT
-        $smsToClient = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $smsToClient = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $smsToClient->messages->create($clientNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $message
-        ]);
+        ]); */
 
         return redirect()->action('Calendar_Controller@index');
         //return redirect()->action('Rental_Agreement_Controller@rental_customer_data');
@@ -270,11 +270,11 @@ class RentRequestController extends Controller
         $marvinNumber = '13104099884';
 
         //SMS TO MARVIN
-        $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+        /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
         $smsToMarvin->messages->create($marvinNumber, [
             'from' => $TWILIO_NUMBER,
             'body' => $message
-        ]);
+        ]); */
 
         $resultado = self::addToDispatch($rentalForm, $machinerys);
 
@@ -446,18 +446,18 @@ class RentRequestController extends Controller
                 $joselinNumber = '13109127546';
 
                 //SMS TO MARVIN
-                $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+                /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
                 $smsToMarvin->messages->create($marvinNumber, [
                     'from' => $TWILIO_NUMBER,
                     'body' => $message
-                ]);
+                ]); */
 
                 //SMS TO JOSELIN
-                $smsToJoselin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+                /* $smsToJoselin = new Client($TWILIO_SID,$TWILIO_TOKEN);
                 $smsToJoselin->messages->create($joselinNumber, [
                     'from' => $TWILIO_NUMBER,
                     'body' => $message
-                ]);
+                ]); */
             }
         }
     }

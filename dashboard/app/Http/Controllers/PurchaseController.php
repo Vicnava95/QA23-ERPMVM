@@ -306,11 +306,11 @@ class PurchaseController extends Controller
                             $joselinNumber = '13109127546';
                     
                             //SMS TO MARVIN
-                            $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+                            /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
                             $smsToMarvin->messages->create($marvinNumber, [
                                 'from' => $TWILIO_NUMBER,
                                 'body' => $mensaje
-                            ]);
+                            ]); */
                         }else if($percentPhase >= 80){
                             $mensaje = "Project: ".$project[0]->name_project.",\n".$percentPhase."% of the budget has been spent: ".$phase[0]->name_phase;
                             $TWILIO_SID='AC95dd1cfb53cae79cc24195835f06e8b1';
@@ -320,11 +320,11 @@ class PurchaseController extends Controller
                             $joselinNumber = '13109127546';
 
                             //SMS TO MARVIN
-                            $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+                            /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
                             $smsToMarvin->messages->create($marvinNumber, [
                                 'from' => $TWILIO_NUMBER,
                                 'body' => $mensaje
-                            ]);
+                            ]); */
                         }
                     }
                 }
@@ -617,11 +617,11 @@ class PurchaseController extends Controller
                 //$joselinNumber = '13109127546';
         
                 //SMS TO MARVIN
-                $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
+                /* $smsToMarvin = new Client($TWILIO_SID,$TWILIO_TOKEN);
                 $smsToMarvin->messages->create($marvinNumber, [
                     'from' => $TWILIO_NUMBER,
                     'body' => $mensaje
-                ]);
+                ]); */
             }
         }
         //return redirect()->route('purchase.purchaseXProject',[$id]);
