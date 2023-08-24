@@ -84,7 +84,7 @@
                                 <p style="padding-top: 5px; margin-top: 0px;"><strong>Rental Schedule</strong></p>
                             </span></a>
                         </div>
-                        <!-- Fin de Icono de Notificaciones -->
+                        {{-- <!-- Fin de Icono de Notificaciones -->
                         <!-- Inicio de Icono de Notificaciones -->
                         <div class="col-md-2 col-xs-6 col-sm-2 estilo">
                             <a href="{{route('clientsweb')}}" style="text-decoration: none; color: inherit; outline: 0; margin-top: 20px;"><span class="text-center">
@@ -99,7 +99,7 @@
                                 <p style="margin-botttom: 0px; padding-bottom: 0px;"><img src="{{ asset('images/icons/icon5.png') }}"></p>
                                 <p style="padding-top: 5px; margin-top: 0px;"><strong>Clients</strong></p>
                             </span></a>
-                        </div>
+                        </div> --}}
                     @endif
                     
                     @if (Auth::user()->rol == 'labor')
@@ -118,31 +118,31 @@
                                 <p style="padding-top: 5px; margin-top: 0px;"><strong>Reports</strong></p>
                             </span></a>
                         </div>
-                        <div class="col-md-2 col-xs-6 col-sm-2 estilo">
+                        {{-- <div class="col-md-2 col-xs-6 col-sm-2 estilo">
                             <a href="{{route('smsDashboard')}}" style="text-decoration: none; color: inherit; outline: 0; margin-top: 20px;"><span class="text-center">
                                 <p style="margin-botttom: 0px; padding-bottom: 0px;"><img style="width: 80px; height: 80px;border-radius:12px;" src="{{ asset('images/icons/smsIcon.png') }}"></p>
                                 <p style="padding-top: 5px; margin-top: 0px;"><strong>SMS</strong></p>
                             </span></a>
-                        </div>
+                        </div> --}}
                     @endif
                     @if (Auth::user()->rol == 'admin' || Auth::user()->rol == 'secretary')
-                        <div class="col-md-2 col-xs-6 col-sm-2 estilo">
+                        <div class="col-md-2 col-xs-6 col-sm-2 estilo" hidden>
                             <a href="{{route('showAdminExpenses')}}" style="text-decoration: none; color: inherit; outline: 0; margin-top: 20px;"><span class="text-center">
                                 <p style="margin-botttom: 0px; padding-bottom: 0px;"><img style="width: 80px; height: 80px;border-radius:12px;" src="{{ asset('images/icons/adminExpenses.png') }}"></p>
                                 <p style="padding-top: 5px; margin-top: 0px;"><strong>Admin Expenses</strong></p>
                             </span></a>
                         </div>
-                        <div class="col-md-2 col-xs-6 col-sm-2 estilo">
+                        <div class="col-md-2 col-xs-6 col-sm-2 estilo" hidden>
                             <a href="{{route('calculator.index')}}" style="text-decoration: none; color: inherit; outline: 0; margin-top: 20px;"><span class="text-center">
                                 <p style="margin-botttom: 0px; padding-bottom: 0px;"><img style="width: 80px; height: 80px;border-radius:12px;" src="{{ asset('images/icons/iconcalculator.png') }}"></p>
                                 <p style="padding-top: 5px; margin-top: 0px;"><strong>Estimate Calculator</strong></p>
                             </span></a>
                         </div>
                         <div class="col-md-2 col-xs-6 col-sm-2 estilo">
-                            <a href="{{route('reportProjects',1)}}" style="text-decoration: none; color: inherit; outline: 0; margin-top: 20px;"><span class="text-center">
+                            {{-- <a href="{{route('reportProjects',1)}}" style="text-decoration: none; color: inherit; outline: 0; margin-top: 20px;"><span class="text-center">
                                 <p style="margin-botttom: 0px; padding-bottom: 0px;"><img style="width: 80px; height: 80px;border-radius:12px;" src="{{ asset('images/icons/iconreport.png') }}"></p>
                                 <p style="padding-top: 5px; margin-top: 0px;"><strong>Project Report</strong></p>
-                            </span></a>
+                            </span></a> --}}
                         </div>
                     @endif
 
