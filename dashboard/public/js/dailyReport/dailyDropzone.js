@@ -28,7 +28,7 @@ Dropzone.options.dropzone =
         //var idProject = getInputValue();
         $.ajax({
             method:'GET',
-            url: 'https://mvm-machinery.com/dashboard/public/dropzoneImageDailyReportDelete/'+name+'',
+            url: 'http://127.0.0.1:8000/dropzoneImageDailyReportDelete/'+name+'',
             //url: 'http://127.0.0.1:8000/dropzoneImageDailyReportDelete/'+name+'',
             
             success: function(response){

@@ -131,7 +131,7 @@ $(document).on('click','#bulk_edit',function(){
     $.ajax({
         method:'GET',
         //url: 'http://127.0.0.1:8000/editClientweb/'+id,
-        url:'https://mvm-machinery.com/dashboard/public/editClientweb/'+id,
+        url:'http://127.0.0.1:8000/editClientweb/'+id,
         success:function(data){ 
             $('.modalEditBody').html(data);
         }

@@ -130,7 +130,7 @@ class ContactProjectController extends Controller
     public function edit(Clientweb $client)
     {
         $method = '@csrf @method("PATCH")';
-        $output = '<form action="https://mvm-machinery.com/dashboard/public/updateContactweb/'.$client->id.'" name="form1" method="GET" class="well form-horizontal" enctype="multipart/form-data" > 
+        $output = '<form action="http://127.0.0.1:8000/updateContactweb/'.$client->id.'" name="form1" method="GET" class="well form-horizontal" enctype="multipart/form-data" > 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
         <fieldset>
             <div class="row"> 

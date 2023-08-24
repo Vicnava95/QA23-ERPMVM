@@ -4,7 +4,7 @@ function showSourceClient(id){
     $.ajax({
         method:'GET',
         url:'serviceLanding/'+id,
-        //url:'https://mvm-machinery.com/dashboard/public/serviceLanding/'+id,
+        //url:'http://127.0.0.1:8000/serviceLanding/'+id,
         success:function(response){
         }
     }).done(function(res){
@@ -24,7 +24,7 @@ function showSourceClientDesktop(id){
   $.ajax({
       method:'GET',
       url:'serviceLanding/'+id,
-      //url:'https://mvm-machinery.com/dashboard/public/serviceLanding/'+id,
+      //url:'http://127.0.0.1:8000/serviceLanding/'+id,
       success:function(response){
       }
   }).done(function(res){
@@ -42,7 +42,7 @@ function searchClient(name){
     $.ajax({
         method:'GET',
         url:'searchClient/'+name,
-        //url:'https://mvm-machinery.com/dashboard/public/searchClient/'+name,
+        //url:'http://127.0.0.1:8000/searchClient/'+name,
         success:function(data){
             $('#showListClients').fadeIn();  
             $('#showListClients').html(data);
@@ -54,7 +54,7 @@ function showClient(id){
     $.ajax({
         method:'GET',
         url: 'showClient/'+id,
-        //url:'https://mvm-machinery.com/dashboard/public/showClient/'+id,
+        //url:'http://127.0.0.1:8000/showClient/'+id,
         success:function(data){
             $('#showListClients').fadeOut();  
             $('#showClient').fadeIn();  
@@ -89,7 +89,7 @@ $(document).ready(function() {
                 $.ajax({
                 method:'GET',
                 url:'destroyClientweb/'+ element,
-                //url:'https://mvm-machinery.com/dashboard/public/destroyClientweb/'+name,
+                //url:'http://127.0.0.1:8000/destroyClientweb/'+name,
                 success:function(response){
                     console.log('done'); 
                     }
@@ -112,7 +112,7 @@ $(document).ready(function() {
                 $.ajax({
                     method:'GET',
                     url: 'editClientweb/'+id,
-                    //url:'https://mvm-machinery.com/dashboard/public/editClientweb/'+id,
+                    //url:'http://127.0.0.1:8000/editClientweb/'+id,
                     success:function(data){ 
                         $('.modalEditBody').html(data);
                     }

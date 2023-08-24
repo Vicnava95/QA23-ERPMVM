@@ -19,7 +19,7 @@ function cal() {
   function searchClient(name){
     $.ajax({
       method:'GET',
-      url:'https://mvm-machinery.com/dashboard/public/searchClientFromProject/'+name,
+      url:'http://127.0.0.1:8000/searchClientFromProject/'+name,
       //url:'/searchClientFromProject/' + name,
       success:function(data){
           $('#showClient').fadeIn();  

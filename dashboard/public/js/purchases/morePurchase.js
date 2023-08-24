@@ -235,7 +235,7 @@ function searchPhase(id){
         {
             $.ajax({
                 method:'GET',
-                url:'https://mvm-machinery.com/dashboard/public/getphases/'+id,
+                url:'http://127.0.0.1:8000/getphases/'+id,
                 //url:'http://127.0.0.1:8000/getphases/'+id,
                 success:function(response){
                     $('#phasesList').text(response.succes);//cambiar luego 
@@ -257,7 +257,7 @@ function searchPhase(id){
 function showCategories(){
     $.ajax({
         method:'GET',
-        url:'https://mvm-machinery.com/dashboard/public/getcategories',
+        url:'http://127.0.0.1:8000/getcategories',
         //url:'http://127.0.0.1:8000/getcategories',
         success:function(response){
             $('.categoriesList').text(response.succes);//cambiar luego 

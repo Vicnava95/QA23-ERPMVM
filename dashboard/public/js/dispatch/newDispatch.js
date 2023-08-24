@@ -21,7 +21,7 @@ function automaticTotalRentalCost(){
 function searchClient(name){
     $.ajax({
       method:'GET',
-      url:'https://mvm-machinery.com/dashboard/public/getClientRental/'+name,
+      url:'http://127.0.0.1:8000/getClientRental/'+name,
       //url:'getClientRental/' + name,
       success:function(data){
           $('#showCustomer').fadeIn();  
@@ -33,7 +33,7 @@ function searchClient(name){
 function newForm(){
     $.ajax({
       method:'GET',
-      url:'https://mvm-machinery.com/dashboard/public/showFormClient',
+      url:'http://127.0.0.1:8000/showFormClient',
       //url:'showFormClient/',
       success:function(data){ 
           $('#modalPost').html(data);
@@ -55,7 +55,7 @@ function newForm(){
     var idlanding = $('#selectClientSource').val();
   
     $.ajax({
-      url:'https://mvm-machinery.com/dashboard/public/createClientWeb/'+name+'/'+email+'/'+phone+'/'+address+'/'+service+'/'+idlanding,
+      url:'http://127.0.0.1:8000/createClientWeb/'+name+'/'+email+'/'+phone+'/'+address+'/'+service+'/'+idlanding,
       //url:'/createClientWeb/'+name+'/'+email+'/'+phone+'/'+address+'/'+service+'/'+idlanding,
           method:'GET'
       }).done(function(data){ //funcion que verifica si hay registros
@@ -66,7 +66,7 @@ function newForm(){
 
 function getid(id){
     $.ajax({
-        url:'https://mvm-machinery.com/dashboard/public/infoClientRental/'+id,
+        url:'http://127.0.0.1:8000/infoClientRental/'+id,
         //url:'/infoClientRental/'+id,
             method:'GET'
         }).done(function(data){ //funcion que verifica si hay registros

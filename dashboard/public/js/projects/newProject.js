@@ -67,7 +67,7 @@ function deleteFile(id){
 function searchClient(name){
   $.ajax({
     method:'GET',
-    url:'https://mvm-machinery.com/dashboard/public/searchClientFromProject/'+name,
+    url:'http://127.0.0.1:8000/searchClientFromProject/'+name,
     //url:'searchClientFromProject/' + name,
     success:function(data){
         $('#showClient').fadeIn();  
@@ -80,7 +80,7 @@ function getInfoClient(id){
   $.ajax({
       method: 'GET',
       //url:'infoClientNewProject/'+id,
-      url:'https://mvm-machinery.com/dashboard/public/infoClientNewProject/'+id,
+      url:'http://127.0.0.1:8000/infoClientNewProject/'+id,
       success:function(data){
         $('#showInfo').html(data);
     }
@@ -91,7 +91,7 @@ function getInfoClient(id){
 function newForm(){
   $.ajax({
     method:'GET',
-    url:'https://mvm-machinery.com/dashboard/public/showFormClient',
+    url:'http://127.0.0.1:8000/showFormClient',
     //url:'showFormClient/',
     success:function(data){ 
         $('#modalPost').html(data);
@@ -116,7 +116,7 @@ function newSubmitClient(){
   }
 
   $.ajax({
-    url:'https://mvm-machinery.com/dashboard/public/createClientWeb/'+name+'/'+email+'/'+phone+'/'+address+'/'+service+'/'+idlanding,
+    url:'http://127.0.0.1:8000/createClientWeb/'+name+'/'+email+'/'+phone+'/'+address+'/'+service+'/'+idlanding,
     //url:'/createClientWeb/'+name+'/'+email+'/'+phone+'/'+address+'/'+service+'/'+idlanding,
         method:'GET'
     }).done(function(data){ //funcion que verifica si hay registros

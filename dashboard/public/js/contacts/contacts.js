@@ -4,7 +4,7 @@ function showSourceClient(id){
     $.ajax({
         method:'GET',
         //url:'serviceLanding/'+id,
-        url:'https://mvm-machinery.com/dashboard/public/serviceLanding/'+id,
+        url:'http://127.0.0.1:8000/serviceLanding/'+id,
         success:function(response){
         }
     }).done(function(res){
@@ -25,7 +25,7 @@ function showSourceClientDesktop(id){
   $.ajax({
       method:'GET',
       //url:'serviceLanding/'+id,
-      url:'https://mvm-machinery.com/dashboard/public/serviceLanding/'+id,
+      url:'http://127.0.0.1:8000/serviceLanding/'+id,
       success:function(response){
       }
   }).done(function(res){
@@ -43,7 +43,7 @@ function searchClient(name){
     $.ajax({
         method:'GET',
         //url:'searchBarContact/'+name,
-        url:'https://mvm-machinery.com/dashboard/public/searchBarContact/'+name,
+        url:'http://127.0.0.1:8000/searchBarContact/'+name,
         success:function(data){
             $('#showListClients').fadeIn();  
             $('#showListClients').html(data);
@@ -55,7 +55,7 @@ function showClient(id){
     $.ajax({
         method:'GET',
         //url: 'showClient/'+id,
-        url:'https://mvm-machinery.com/dashboard/public/showClient/'+id,
+        url:'http://127.0.0.1:8000/showClient/'+id,
         success:function(data){
             $('#showListClients').fadeOut();  
             $('#showClient').fadeIn();  
@@ -89,7 +89,7 @@ $(document).ready(function() {
                 $.ajax({
                 method:'GET',
                 url:'destroyContactweb/'+ element,
-                //url:'https://mvm-machinery.com/dashboard/public/destroyContactweb/'+name,
+                //url:'http://127.0.0.1:8000/destroyContactweb/'+name,
                 success:function(response){
                     console.log('done'); 
                     }
@@ -112,7 +112,7 @@ $(document).ready(function() {
                 $.ajax({
                     method:'GET',
                     url: 'editContactweb/'+id,
-                    //url:'https://mvm-machinery.com/dashboard/public/editContactweb/'+id,
+                    //url:'http://127.0.0.1:8000/editContactweb/'+id,
                     success:function(data){ 
                         $('.modalEditBody').html(data);
                     }

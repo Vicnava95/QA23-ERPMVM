@@ -202,7 +202,7 @@ function showModalAndCard(number,title){
 function findPhases(projectId,dailyReportId){
     $.ajax({
         method:'GET',
-        url:'https://mvm-machinery.com/dashboard/public/showPhasesListEditAjax/'+ projectId+'/'+dailyReportId,
+        url:'http://127.0.0.1:8000/showPhasesListEditAjax/'+ projectId+'/'+dailyReportId,
         //url:'http://127.0.0.1:8000/showPhasesListEditAjax/'+ projectId+'/'+dailyReportId,
         success:function(data){  
             $('#projectPhaseList').html(data);
@@ -232,7 +232,7 @@ $( document ).ready(function() {
     function searchProject(name){
         $.ajax({
             method:'GET',
-            url:'https://mvm-machinery.com/dashboard/public/searchProjectDaily/'+name,
+            url:'http://127.0.0.1:8000/searchProjectDaily/'+name,
             //url:'http://127.0.0.1:8000/searchProjectDaily/'+ name,
             success:function(data){
                 $('#projectList').fadeIn();  

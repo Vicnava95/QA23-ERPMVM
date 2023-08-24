@@ -16,7 +16,7 @@ function deletePurchases(id){
 function showCategories(){
     $.ajax({
         method:'GET',
-        //url:'https://mvm-machinery.com/dashboard/public/getMachinerysRental',
+        //url:'http://127.0.0.1:8000/getMachinerysRental',
         url:'getMachinerysRental',
         success:function(response){
             

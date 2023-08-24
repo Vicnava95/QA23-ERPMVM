@@ -381,7 +381,7 @@ class ClientwebController extends Controller
         $clientSource = ClientSource::all();
         //$ruta = 'updateClientweb/'.$client->id.'/';
         $method = '@csrf @method("PATCH")';
-        $output = '<form action="https://mvm-machinery.com/dashboard/public/updateClientweb/'.$client->id.'" name="form1" method="GET" class="well form-horizontal" enctype="multipart/form-data" > 
+        $output = '<form action="http://127.0.0.1:8000/updateClientweb/'.$client->id.'" name="form1" method="GET" class="well form-horizontal" enctype="multipart/form-data" > 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
         <fieldset>
             <div class="row"> 

@@ -20,7 +20,7 @@ function showCategories(id){
     console.log(id)
     $.ajax({
         method:'GET',
-        url:'https://mvm-machinery.com/dashboard/public/getCategoriesExpenses/id',
+        url:'http://127.0.0.1:8000/getCategoriesExpenses/id',
         //url:'http://127.0.0.1:8000/getCategoriesExpenses/'+id+'',
         success:function(response){
             $('.categoriesList').text(response.succes);//cambiar luego 
@@ -40,7 +40,7 @@ function showCategories(id){
 function showCate(){
     $.ajax({
         method:'GET',
-        url:'https://mvm-machinery.com/dashboard/public/getCate',
+        url:'http://127.0.0.1:8000/getCate',
         //url:'http://127.0.0.1:8000/getCate',
         success:function(response){
             $('.anotherCategory').text(response.succes);//cambiar luego 

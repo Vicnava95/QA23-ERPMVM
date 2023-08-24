@@ -26,7 +26,7 @@ var query = id;
         var _token = $('input[name="_token"]').val();
         $.ajax({
             method:'POST',
-            //url:'https://mvm-machinery.com/dashboard/public/getphases',
+            //url:'http://127.0.0.1:8000/getphases',
             url:'getphases',
             data:{query:query,_token:_token},
             success:function(response){
@@ -50,7 +50,7 @@ function searchPhase(id){
         {
             $.ajax({
                 method:'GET',
-                url:'https://mvm-machinery.com/dashboard/public/getphases/'+id,
+                url:'http://127.0.0.1:8000/getphases/'+id,
                 //url:'getphases/'+id,
                 success:function(response){
                     $('#phasesList').text(response.succes);//cambiar luego 
@@ -75,7 +75,7 @@ function searchPhase(id){
     var _token = $('input[name="_token"]').val();
     $.ajax({
         method:'POST',
-        //url:'https://mvm-machinery.com/dashboard/public/getcategories',
+        //url:'http://127.0.0.1:8000/getcategories',
         url:'getcategories',
         data:{_token:_token},
         success:function(response){
@@ -95,7 +95,7 @@ function searchPhase(id){
 function showCategories(){
     $.ajax({
         method:'GET',
-        url:'https://mvm-machinery.com/dashboard/public/getcategories',
+        url:'http://127.0.0.1:8000/getcategories',
         //url:'getcategories',
         success:function(response){
             
@@ -1267,7 +1267,7 @@ $( document ).ready(function() {
             var _token = $('input[name="_token"]').val();
             $.ajax({
                 method:'POST',
-                //url:'https://mvm-machinery.com/dashboard/public/autocomplete/fetch',
+                //url:'http://127.0.0.1:8000/autocomplete/fetch',
                 url:'autocomplete/fetch',
                 data:{query:query,_token:_token},
                 success:function(data){
@@ -1284,7 +1284,7 @@ $( document ).ready(function() {
         {
             $.ajax({
                 method:'GET',
-                url:'https://mvm-machinery.com/dashboard/public/autocomplete/fetch/'+name,
+                url:'http://127.0.0.1:8000/autocomplete/fetch/'+name,
                 //url:'autocomplete/fetch/' + name,
                 success:function(data){
                     $('#projectList').fadeIn();  

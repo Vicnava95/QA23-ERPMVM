@@ -10,7 +10,7 @@ Dropzone.options.dropzone =
             //var idProject = getInputValue();
             $.ajax({
                 method:'GET',
-                url: 'https://mvm-machinery.com/dashboard/public/dropzoneDeleteDocumentMail/'+name+'',
+                url: 'http://127.0.0.1:8000/dropzoneDeleteDocumentMail/'+name+'',
                 //url: 'http://127.0.0.1:8000/dropzoneDeleteDocumentMail/'+name+'',
                 
                 success: function(response){

@@ -389,7 +389,7 @@ function showModalAndCard(number,title){
 function findPhases(projectId){
     $.ajax({
         method:'GET',
-        url:'https://mvm-machinery.com/dashboard/public/showPhasesListAjax/'+projectId,
+        url:'http://127.0.0.1:8000/showPhasesListAjax/'+projectId,
         //url:'showPhasesListAjax/'+ projectId,
         success:function(data){  
             $('#projectPhaseList').html(data);
@@ -420,7 +420,7 @@ $( document ).ready(function() {
     function searchProject(name){
         $.ajax({
             method:'GET',
-            url:'https://mvm-machinery.com/dashboard/public/searchProjectDaily/'+name,
+            url:'http://127.0.0.1:8000/searchProjectDaily/'+name,
             //url:'searchProjectDaily/'+ name,
             success:function(data){
                 $('#projectList').fadeIn();  

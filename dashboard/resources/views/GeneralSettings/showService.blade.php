@@ -219,7 +219,7 @@
         method:'GET',
         headers: { 'Content-Type': 'application/json'},
         //url:'http://127.0.0.1:8000/changeStatusService/'+{{$service->id}}+'/'+value
-        url:'https://mvm-machinery.com/dashboard/public/changeStatusService/'+{{$service->id}}+'/'+value
+        url:'http://127.0.0.1:8000/changeStatusService/'+{{$service->id}}+'/'+value
     }).done(function(data){
         console.log('active');
     });
@@ -233,7 +233,7 @@
         method:'GET',
         headers: { 'Content-Type': 'application/json'},
         //url:'http://127.0.0.1:8000/changeStatusService/'+{{$service->id}}+'/'+value
-        url:'https://mvm-machinery.com/dashboard/public/changeStatusService/'+{{$service->id}}+'/'+value
+        url:'http://127.0.0.1:8000/changeStatusService/'+{{$service->id}}+'/'+value
     }).done(function(data){
         console.log('active');
     });

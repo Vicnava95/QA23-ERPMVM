@@ -187,7 +187,7 @@
         method:'GET',
         headers: { 'Content-Type': 'application/json'},
         //url:'http://127.0.0.1:8000/changeStatusAdmin/'+{{$typeExpense->id}}+'/'+value
-        url:'https://mvm-machinery.com/dashboard/public/changeStatusAdmin/'+{{$typeExpense->id}}+'/'+value
+        url:'http://127.0.0.1:8000/changeStatusAdmin/'+{{$typeExpense->id}}+'/'+value
     }).done(function(data){
         console.log('active');
     });
@@ -201,7 +201,7 @@
         method:'GET',
         headers: { 'Content-Type': 'application/json'},
         //url:'http://127.0.0.1:8000/changeStatusAdmin/'+{{$typeExpense->id}}+'/'+value
-        url:'https://mvm-machinery.com/dashboard/public/changeStatusAdmin/'+{{$typeExpense->id}}+'/'+value
+        url:'http://127.0.0.1:8000/changeStatusAdmin/'+{{$typeExpense->id}}+'/'+value
     }).done(function(data){
         console.log('active');
     });

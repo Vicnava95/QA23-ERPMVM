@@ -3,7 +3,7 @@ function searchClient(name){
     {
         $.ajax({
             method:'GET',
-            url:'https://mvm-machinery.com/dashboard/public/getClient/'+name,
+            url:'http://127.0.0.1:8000/getClient/'+name,
             //url:'http://127.0.0.1:8000/getClient/'+ name,
             //url:'getClient/'+ name,
             success:function(data){
@@ -19,7 +19,7 @@ function getInfoClient(id){
         method: 'GET',
         //url:'getInfoClient/'+id,
         //url:'http://127.0.0.1:8000/getInfoClient/'+id,
-        url:'https://mvm-machinery.com/dashboard/public/getInfoClient/'+id,
+        url:'http://127.0.0.1:8000/getInfoClient/'+id,
         success:function(response){
         }
     }).done(function(res){

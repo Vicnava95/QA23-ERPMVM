@@ -29,10 +29,10 @@ function getValues(id){
         method:'GET',
         headers: { 'Content-Type': 'application/json'},
         //url:'http://127.0.0.1:8000/updateFinishDate/'+idProjecto+'/'+newDate1
-        url:'https://mvm-machinery.com/dashboard/public/updateFinishDate/'+idProjecto+'/'+newDate1
+        url:'http://127.0.0.1:8000/updateFinishDate/'+idProjecto+'/'+newDate1
     }).done(function(data){
         console.log('ready2');
-        window.location = "https://mvm-machinery.com/dashboard/public/activeProjects";
+        window.location = "http://127.0.0.1:8000/activeProjects";
     });
 } 
 
@@ -53,17 +53,17 @@ function changeEndDateProject(id){
         method:'GET',
         headers: { 'Content-Type': 'application/json'},
         //url:'http://127.0.0.1:8000/updateEndDateProject/'+idProjecto+'/'+newDate1
-        url:'https://mvm-machinery.com/dashboard/public/updateEndDateProject/'+idProjecto+'/'+newDate1
+        url:'http://127.0.0.1:8000/updateEndDateProject/'+idProjecto+'/'+newDate1
     }).done(function(data){
         console.log('ready2');
-        window.location = "https://mvm-machinery.com/dashboard/public/activeProjects";
+        window.location = "http://127.0.0.1:8000/activeProjects";
     });
 } 
 
 function pickupNotification(){
     $.ajax({
         method:'GET',
-        url:'https://mvm-machinery.com/dashboard/public/recordingPickup',
+        url:'http://127.0.0.1:8000/recordingPickup',
         //url:'/recordingPickup',
         success:function(){
         }
@@ -84,7 +84,7 @@ $( document ).ready(function() {
     function searchProject(name){
         $.ajax({
             method:'GET',
-            url:'https://mvm-machinery.com/dashboard/public/searchProjectD/'+name,
+            url:'http://127.0.0.1:8000/searchProjectD/'+name,
             //url:'searchProjectD/'+ name,
             success:function(data){
                 $('#projectList').fadeIn();  
@@ -117,7 +117,7 @@ $( document ).ready(function() {
     function searchProject1(name){
         $.ajax({
             method:'GET',
-            url:'https://mvm-machinery.com/dashboard/public/searchProjectD/'+name,
+            url:'http://127.0.0.1:8000/searchProjectD/'+name,
             //url:'searchProjectD/'+ name,
             success:function(data){
                 $('#projectList1').fadeIn();  

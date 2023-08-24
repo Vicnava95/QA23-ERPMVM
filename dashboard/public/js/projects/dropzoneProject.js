@@ -24,7 +24,7 @@ Dropzone.options.dropzone =
         //var idProject = getInputValue();
         $.ajax({
             method:'GET',
-            url: 'https://mvm-machinery.com/dashboard/public/dropzoneFileDocumentDelete/'+name+'',
+            url: 'http://127.0.0.1:8000/dropzoneFileDocumentDelete/'+name+'',
             //url: 'http://127.0.0.1:8000/dropzoneFileDocumentDelete/'+name+'',
             
             success: function(response){

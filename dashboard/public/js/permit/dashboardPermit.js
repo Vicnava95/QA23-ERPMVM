@@ -10,7 +10,7 @@ $( document ).ready(function() {
     function searchProject(name){
         $.ajax({
             method:'GET',
-            url:'https://mvm-machinery.com/dashboard/public/getPermitsAjax/'+name,
+            url:'http://127.0.0.1:8000/getPermitsAjax/'+name,
             //url:'getPermitsAjax/'+ name,
             success:function(data){
                 $('#permitList').fadeIn();  

@@ -80,14 +80,14 @@ class CategoryController extends Controller
                     case 1:
                         if(substr($aImages['imageRef'],-3) == "MOV" || substr($aImages['imageRef'],-3) == "mp4" || substr($aImages['imageRef'],-3) == "mov"){
                             $output .= '<video id="myImg'.$aImages['id'].'" style="width:100%;max-width:40px;max-height:40px" controls>
-                                            <source  src="https://mvm-machinery.com/dashboard/public/uploads/'.$aImages['imageRef'].'">
+                                            <source  src="http://127.0.0.1:8000/uploads/'.$aImages['imageRef'].'">
                                         </video>';
                         }else{
                             $output .= '<img id="myImg'.$aImages['id'].'"'; 
-                            /* $output .= 'alt="<a class="btn btn-outline-danger" href="https://mvm-machinery.com/dashboard/public/deleteFile/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>"'; */
-                            $output .= 'src="https://mvm-machinery.com/dashboard/public/uploads/'.$aImages['imageRef'].'" style="width:100%;max-width:40px;max-height:40px">';
+                            /* $output .= 'alt="<a class="btn btn-outline-danger" href="http://127.0.0.1:8000/deleteFile/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>"'; */
+                            $output .= 'src="http://127.0.0.1:8000/uploads/'.$aImages['imageRef'].'" style="width:100%;max-width:40px;max-height:40px">';
                         }
-                        /* $output .= '<a href="https://mvm-machinery.com/dashboard/public/uploads/'.$aImages['imageRef'].'" target="_blank">'.$aImages['imageRef'].'</a>'; */
+                        /* $output .= '<a href="http://127.0.0.1:8000/uploads/'.$aImages['imageRef'].'" target="_blank">'.$aImages['imageRef'].'</a>'; */
 
                         /* The Modal */
                         $output .= '<div id="myModal'.$aImages['id'].'" class="modalImage">
@@ -97,7 +97,7 @@ class CategoryController extends Controller
                                         <img class="modal-content-image" id="img'.$aImages['id'].'">
                                         <!-- Modal Caption (Image Text) -->
                                         <div  style="text-align: center" id="caption'.$aImages['id'].'">
-                                            <a class="btn btn-outline-danger" href="https://mvm-machinery.com/dashboard/public/deleteFile/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>    
+                                            <a class="btn btn-outline-danger" href="http://127.0.0.1:8000/deleteFile/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>    
                                         </div>
                                     </div>';
                         
@@ -212,15 +212,15 @@ class CategoryController extends Controller
                     case 2:
                         if(substr($aImages['imageRef'],-3) == "MOV" || substr($aImages['imageRef'],-3) == "mp4" || substr($aImages['imageRef'],-3) == "mov"){
                             $output .= '<video id="myImgDaily'.$aImages['id'].'" style="width:100%;max-width:40px;max-height:40px" controls>
-                                            <source  src="https://mvm-machinery.com/dashboard/public/imageDailyReport/'.$aImages['imageRef'].'">
+                                            <source  src="http://127.0.0.1:8000/imageDailyReport/'.$aImages['imageRef'].'">
                                         </video>';
                         }else{
                             $output .= '<img id="myImgDaily'.$aImages['id'].'"'; 
-                            /* $output .= 'alt="<a class="btn btn-outline-danger" href="https://mvm-machinery.com/dashboard/public/dropzoneImageDailyReportMoreInfo/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>"';  */
-                            $output .= 'src="https://mvm-machinery.com/dashboard/public/imageDailyReport/'.$aImages['imageRef'].'" style="width:100%;max-width:40px;max-height:40px">';
+                            /* $output .= 'alt="<a class="btn btn-outline-danger" href="http://127.0.0.1:8000/dropzoneImageDailyReportMoreInfo/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>"';  */
+                            $output .= 'src="http://127.0.0.1:8000/imageDailyReport/'.$aImages['imageRef'].'" style="width:100%;max-width:40px;max-height:40px">';
                             
                         }
-                        /* $output .= '<a href="https://mvm-machinery.com/dashboard/public/imageDailyReport/'.$aImages['imageRef'].'" target="_blank">'.$aImages['imageRef'].'</a>'; */
+                        /* $output .= '<a href="http://127.0.0.1:8000/imageDailyReport/'.$aImages['imageRef'].'" target="_blank">'.$aImages['imageRef'].'</a>'; */
 
                         /* The Modal */
                         $output .= '<div id="myModal'.$aImages['id'].'" class="modalImage">
@@ -230,7 +230,7 @@ class CategoryController extends Controller
                                         <img class="modal-content-image" id="img'.$aImages['id'].'">
                                         <!-- Modal Caption (Image Text) -->
                                         <div  style="text-align: center" id="captionI'.$aImages['id'].'">
-                                            <a class="btn btn-outline-danger" href="https://mvm-machinery.com/dashboard/public/dropzoneImageDailyReportMoreInfo/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>    
+                                            <a class="btn btn-outline-danger" href="http://127.0.0.1:8000/dropzoneImageDailyReportMoreInfo/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>    
                                         </div>
                                     </div>';
 
@@ -375,11 +375,11 @@ class CategoryController extends Controller
                    
                         if(substr($aImages['imageRef'],-3) == "MOV" || substr($aImages['imageRef'],-3) == "mp4" || substr($aImages['imageRef'],-3) == "mov"){
                             $output .= '<video id="myImgDaily'.$aImages['id'].'" style="width:100%;max-width:40px;max-height:40px" controls>
-                                            <source  src="https://mvm-machinery.com/dashboard/public/imageDailyReport/'.$aImages['imageRef'].'">
+                                            <source  src="http://127.0.0.1:8000/imageDailyReport/'.$aImages['imageRef'].'">
                                         </video>';
                         }else{
                             $output .= '<img id="myImgDaily'.$aImages['id'].'"'; 
-                            $output .= 'src="https://mvm-machinery.com/dashboard/public/imageDailyReport/'.$aImages['imageRef'].'" style="width:100%;max-width:40px;max-height:40px">';
+                            $output .= 'src="http://127.0.0.1:8000/imageDailyReport/'.$aImages['imageRef'].'" style="width:100%;max-width:40px;max-height:40px">';
                             
                         }
 
@@ -391,7 +391,7 @@ class CategoryController extends Controller
                                         <img class="modal-content-image" id="img'.$aImages['id'].'">
                                         <!-- Modal Caption (Image Text) -->
                                         <div  style="text-align: center" id="captionI'.$aImages['id'].'">
-                                            <a class="btn btn-outline-danger" href="https://mvm-machinery.com/dashboard/public/dropzoneImageDailyReportMoreInfo/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>    
+                                            <a class="btn btn-outline-danger" href="http://127.0.0.1:8000/dropzoneImageDailyReportMoreInfo/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>    
                                         </div>
                                     </div>';
 
@@ -536,7 +536,7 @@ class CategoryController extends Controller
                    
                         if(substr($aImages['imageRef'],-3) == "MOV" || substr($aImages['imageRef'],-3) == "mp4" || substr($aImages['imageRef'],-3) == "mov"){
                             $output .= '<video id="myImgDaily'.$aImages['id'].'" style="width:100%;max-width:40px;max-height:40px" controls>
-                                            <source  src="https://mvm-machinery.com/dashboard/public/paymentImages/'.$aImages['imageRef'].'">
+                                            <source  src="http://127.0.0.1:8000/paymentImages/'.$aImages['imageRef'].'">
                                         </video>';
 
                             /* $output .= '<video id="myImgDaily'.$aImages['id'].'" style="width:100%;max-width:40px;max-height:40px" controls>
@@ -544,7 +544,7 @@ class CategoryController extends Controller
                                         </video>'; */
                         }else{
                             $output .= '<img id="myImgDaily'.$aImages['id'].'"'; 
-                            $output .= 'src="https://mvm-machinery.com/dashboard/public/paymentImages/'.$aImages['imageRef'].'" style="width:100%;max-width:40px;max-height:40px">';
+                            $output .= 'src="http://127.0.0.1:8000/paymentImages/'.$aImages['imageRef'].'" style="width:100%;max-width:40px;max-height:40px">';
                             
                             /* $output .= 'src="http://127.0.0.1:8000/paymentImages/'.$aImages['imageRef'].'" style="width:100%;max-width:40px;max-height:40px">'; */
                             
@@ -558,7 +558,7 @@ class CategoryController extends Controller
                                         <img class="modal-content-image" id="img'.$aImages['id'].'">
                                         <!-- Modal Caption (Image Text) -->
                                         <div  style="text-align: center" id="captionI'.$aImages['id'].'">
-                                            <a class="btn btn-outline-danger" href="https://mvm-machinery.com/dashboard/public/dropzoneImageDailyReportMoreInfo/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>    
+                                            <a class="btn btn-outline-danger" href="http://127.0.0.1:8000/dropzoneImageDailyReportMoreInfo/'.$aImages['imageRef'].'" role="button" style="padding: 3px; border-color: white;"><i class="far fa-trash-alt"></i></a>    
                                         </div>
                                     </div>';
 

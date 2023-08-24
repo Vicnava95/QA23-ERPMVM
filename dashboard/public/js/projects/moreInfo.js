@@ -54,7 +54,7 @@
             value = 0; 
         }
         $.ajax({
-            url:'https://mvm-machinery.com/dashboard/public/changeStatusToDoProject/'+id+'/'+value,
+            url:'http://127.0.0.1:8000/changeStatusToDoProject/'+id+'/'+value,
             //url:'/changeStatusToDoProject/'+id+'/'+value,
                 method:'GET'
             }).done(function(data){ //funcion que verifica si hay registros
@@ -66,7 +66,7 @@
     function getAllImagesProjects(id){
         $.ajax({
             method:'GET',
-            url:'https://mvm-machinery.com/dashboard/public/getImagesProject/'+id,
+            url:'http://127.0.0.1:8000/getImagesProject/'+id,
             //url:'/getImagesProject/'+ id,
             success:function(data){
                 $('#allImagesProjects').html(data);
@@ -78,7 +78,7 @@
         
         $.ajax({
             method:'GET',
-            url:'https://mvm-machinery.com/dashboard/public/getImagesDalilyReport/'+id,
+            url:'http://127.0.0.1:8000/getImagesDalilyReport/'+id,
             //url:'/getImagesDalilyReport/'+ id,
             success:function(data){
                 console.log(id);
@@ -90,7 +90,7 @@
     function paymentsImage(id){
         $.ajax({
             method:'GET',
-            url:'https://mvm-machinery.com/dashboard/public/getPaymentsGallery/'+id,
+            url:'http://127.0.0.1:8000/getPaymentsGallery/'+id,
             //url:'/getPaymentsGallery/'+ id,
             success:function(data){
                 console.log(id);
@@ -312,7 +312,7 @@ $(document).ready(function() {
     function addMorePhases(id){
         $.ajax({
             method:'GET',
-            url:'https://mvm-machinery.com/dashboard/public/getPhasesAjax/'+id,
+            url:'http://127.0.0.1:8000/getPhasesAjax/'+id,
             //url:'/getPhasesAjax/'+ id,
             success:function(data){
                 console.log(id);
