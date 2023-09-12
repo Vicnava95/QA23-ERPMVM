@@ -35,8 +35,8 @@
                 <h4><a href="{{route('dashboard')}}" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="uil uil-arrow-left"></i></a></h4>
             </div>
             <div class="col text-center">
-                {{-- <a href="#" onclick="location.href='/reportsThisWeek/'+startDate+'/'+endDate+'/'+2;return false;"><div class="btn btn btn-outline-primary btn-sm" >Go to Report</div></a> --}}
-                <h4><a href="#" onclick="location.href='/dashboard/public/reportsThisWeek/'+startDate+'/'+endDate+'/'+2;return false;" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Go To Report"><i class="uil uil-file-bookmark-alt"></i></a></h4>
+                <a href="#" onclick="location.href='/reportsThisWeek/'+startDate+'/'+endDate+'/'+2;return false;"><div class="btn btn btn-outline-primary btn-sm" >Go to Report</div></a>
+                {{-- <h4><a href="#" onclick="location.href='/dashboard/public/reportsThisWeek/'+startDate+'/'+endDate+'/'+2;return false;" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Go To Report"><i class="uil uil-file-bookmark-alt"></i></a></h4> --}}
             </div>
             <div class="col text-center">
                 <h4><a href="#" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Print PDF"><i class="uil uil-print"></i></a></h4>
@@ -86,26 +86,26 @@
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
-              {{-- <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/payrollToday/'+today+'/'+today+'/'+1"><b>Today</b></a> --}}
-              <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/dashboard/public/payrollToday/'+today+'/'+today+'/'+1"><b>Today</b></a>
+              <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/payrollToday/'+today+'/'+today+'/'+1"><b>Today</b></a>
+              {{-- <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/dashboard/public/payrollToday/'+today+'/'+today+'/'+1"><b>Today</b></a> --}}
             </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="true" href="#"><b>This Week</b></a>
             </li>
             <li class="nav-item">
-                {{-- <a class="nav-link " aria-current="true" href="#" onclick="location.href='/payrollLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a> --}}
-                <a class="nav-link " aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a>
+                <a class="nav-link " aria-current="true" href="#" onclick="location.href='/payrollLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a>
+                {{-- <a class="nav-link " aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a> --}}
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="true" href="#" id="navLinkDate"><b>Dates</b></a>
             </li>
             <li class="nav-item">
-                {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a> --}}
-                <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a>
+                <a class="nav-link" aria-current="true" href="#" onclick="location.href='/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a>
+                {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a> --}}
             </li>
             <li class="nav-item">
-                {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/payrollLastMonth/'+startLastMonth+'/'+endLastMonth+'/'+7;return false;"><b>Last Month</b></a> --}}
-                <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollLastMonth/'+startLastMonth+'/'+endLastMonth+'/'+7;return false;"><b>Last Month</b></a>
+                <a class="nav-link" aria-current="true" href="#" onclick="location.href='/payrollLastMonth/'+startLastMonth+'/'+endLastMonth+'/'+7;return false;"><b>Last Month</b></a>
+                {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollLastMonth/'+startLastMonth+'/'+endLastMonth+'/'+7;return false;"><b>Last Month</b></a> --}}
             </li>
             
           </ul>

@@ -252,8 +252,8 @@ class PermitTicketController extends Controller
             foreach($data as $row)
             {
                 $output .= 
-                '<li style="margin-left:10px; margin-bottom:8px;" class="listaProyectos" value="'.$row->id.' "onclick=window.location="/dashboard/public/getIdProject/'.$row->id.'">'.' • '.$row->name_project.'</li>';
-                /* '<li class="listaProyectos" value="'.$row->id.' "onclick=window.location="/getIdProject/'.$row->id.'">'.$row->name_project.'</li>'; */
+                /* '<li style="margin-left:10px; margin-bottom:8px;" class="listaProyectos" value="'.$row->id.' "onclick=window.location="/dashboard/public/getIdProject/'.$row->id.'">'.' • '.$row->name_project.'</li>'; */
+                '<li class="listaProyectos" value="'.$row->id.' "onclick=window.location="/getIdProject/'.$row->id.'">'.$row->name_project.'</li>';
             }
             $output .= '</ul><br>';
             echo $output;    

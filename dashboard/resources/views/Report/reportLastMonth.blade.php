@@ -54,11 +54,18 @@
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Last Month
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        {{-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="#"  onclick="location.href='/dashboard/public/reportsToday/'+today+'/'+1;return false;">Today</a>
           <a class="dropdown-item" href="#" onclick="location.href='/dashboard/public/reportsThisWeek/'+startDate+'/'+endDate+'/'+2;return false;">This Week</a>
           <a class="dropdown-item" href="#" onclick="location.href='/dashboard/public/reportsLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;">Last Week</a>
           <a class="dropdown-item" href="#" onclick="location.href='/dashboard/public/reportsThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;">This Month</a>
+          <a class="dropdown-item" href="#" id="navLinkDate2">Dates</a>
+        </div> --}}
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#"  onclick="location.href='/reportsToday/'+today+'/'+1;return false;">Today</a>
+          <a class="dropdown-item" href="#" onclick="location.href='/reportsThisWeek/'+startDate+'/'+endDate+'/'+2;return false;">This Week</a>
+          <a class="dropdown-item" href="#" onclick="location.href='/reportsLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;">Last Week</a>
+          <a class="dropdown-item" href="#" onclick="location.href='/reportsThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;">This Month</a>
           <a class="dropdown-item" href="#" id="navLinkDate2">Dates</a>
         </div>
       </div>
@@ -99,23 +106,23 @@
       <ul class="nav nav-tabs card-header-tabs" id="hideNav">
         
         <li class="nav-item">
-          {{-- <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/reportsToday/'+today+'/'+1;return false;"><b>Today</b></a> --}}
-          <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/dashboard/public/reportsToday/'+today+'/'+1;return false;"><b>Today</b></a>
+          <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/reportsToday/'+today+'/'+1;return false;"><b>Today</b></a>
+          {{-- <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/dashboard/public/reportsToday/'+today+'/'+1;return false;"><b>Today</b></a> --}}
         </li>
         <li class="nav-item">
-          {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/reportsThisWeek/'+startDate+'/'+endDate+'/'+2;return false;"><b>This Week</b></a> --}}
-          <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/reportsThisWeek/'+startDate+'/'+endDate+'/'+2;return false;"><b>This Week</b></a>
+          <a class="nav-link" aria-current="true" href="#" onclick="location.href='/reportsThisWeek/'+startDate+'/'+endDate+'/'+2;return false;"><b>This Week</b></a>
+          {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/reportsThisWeek/'+startDate+'/'+endDate+'/'+2;return false;"><b>This Week</b></a> --}}
         </li>
         <li class="nav-item">
-          {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/reportsLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a> --}}
-          <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/reportsLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a>
+          <a class="nav-link" aria-current="true" href="#" onclick="location.href='/reportsLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a>
+          {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/reportsLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a> --}}
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="true" href="#" id="navLinkDate"><b>Dates</b></a>
         </li>
         <li class="nav-item">
-          {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/reportsThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a> --}}
-          <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/reportsThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a>
+          <a class="nav-link" aria-current="true" href="#" onclick="location.href='/reportsThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a>
+          {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/reportsThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a> --}}
         </li>
         <li class="nav-item">
             <a class="nav-link active" aria-current="true" href="#"><b>Last Month</b></a>

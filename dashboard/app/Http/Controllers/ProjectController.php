@@ -1102,7 +1102,7 @@ class ProjectController extends Controller
             foreach($data as $row)
             {
                 $output .= 
-                '<li style="margin-left:10px; margin-bottom:8px;" value="'.$row->id.' "onclick=window.location="/dashboard/public/moreInfo/'.$row->id.'">'.' • '.$row->name_project.'</li>';
+                '<li style="margin-left:10px; margin-bottom:8px;" value="'.$row->id.' "onclick=window.location="/moreInfo/'.$row->id.'">'.' • '.$row->name_project.'</li>';
             }
             $output .= '</ul><br>';
             echo $output;    

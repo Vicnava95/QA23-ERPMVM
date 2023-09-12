@@ -85,27 +85,27 @@
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
-                {{-- <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/payrollToday/'+today+'/'+today+'/'+1"><b>Today</b></a> --}}
-                <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/dashboard/public/payrollToday/'+today+'/'+today+'/'+1"><b>Today</b></a>
+                <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/payrollToday/'+today+'/'+today+'/'+1"><b>Today</b></a>
+                {{-- <a class="nav-link" aria-current="true" href="#"  onclick="location.href='/dashboard/public/payrollToday/'+today+'/'+today+'/'+1"><b>Today</b></a> --}}
             </li>
             <li class="nav-item">
-                {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/payrollThisWeek/'+startDate+'/'+sundayDate+'/'+2;return false;"><b>This Week</b></a> --}}
-                <a class="nav-link " aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollThisWeek/'+startDate+'/'+sundayDate+'/'+2;return false;"><b>This Week</b></a>
+                <a class="nav-link" aria-current="true" href="#" onclick="location.href='/payrollThisWeek/'+startDate+'/'+sundayDate+'/'+2;return false;"><b>This Week</b></a>
+                {{-- <a class="nav-link " aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollThisWeek/'+startDate+'/'+sundayDate+'/'+2;return false;"><b>This Week</b></a> --}}
             </li>
             <li class="nav-item">
-                {{-- <a class="nav-link " aria-current="true" href="#" onclick="location.href='/payrollLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a> --}}
-                <a class="nav-link " aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a>
+                <a class="nav-link " aria-current="true" href="#" onclick="location.href='/payrollLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a>
+                {{-- <a class="nav-link " aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollLastWeek/'+lastWeekStart+'/'+lastWeekEnd+'/'+3;return false;"><b>Last Week</b></a> --}}
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="true" href="#" id="navLinkDate"><b>Dates</b></a>
             </li>
             <li class="nav-item">
-                {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a> --}}
-                <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a>
+                <a class="nav-link" aria-current="true" href="#" onclick="location.href='/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a>
+                {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;"><b>This Month</b></a> --}}
             </li>
             <li class="nav-item">
-                {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/payrollLastMonth/'+startLastMonth+'/'+endLastMonth+'/'+7;return false;"><b>Last Month</b></a> --}}
-                <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollLastMonth/'+startLastMonth+'/'+endLastMonth+'/'+7;return false;"><b>Last Month</b></a>
+                <a class="nav-link" aria-current="true" href="#" onclick="location.href='/payrollLastMonth/'+startLastMonth+'/'+endLastMonth+'/'+7;return false;"><b>Last Month</b></a>
+                {{-- <a class="nav-link" aria-current="true" href="#" onclick="location.href='/dashboard/public/payrollLastMonth/'+startLastMonth+'/'+endLastMonth+'/'+7;return false;"><b>Last Month</b></a> --}}
             </li>
           </ul>
         </div>

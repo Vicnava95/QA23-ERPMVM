@@ -69,7 +69,7 @@
 					<!-- Inicio de Icono de Notificaciones -->
                     @if (Auth::user()->rol == 'admin' || Auth::user()->rol == 'secretary')
                         <div class="col-md-2 col-xs-6 col-sm-2 estilo">
-                            <a href="" onclick="location.href='/dashboard/public/payrollToday/'+today+'/'+today+'/'+1;return false;" style="text-decoration: none; color: inherit; outline: 0; margin-top: 20px;"><span class="text-center">
+                            <a href="" onclick="location.href='/payrollToday/'+today+'/'+today+'/'+1;return false;" style="text-decoration: none; color: inherit; outline: 0; margin-top: 20px;"><span class="text-center">
                                 <p style="margin-botttom: 0px; padding-bottom: 0px;"><img src="{{ asset('images/icons/icon12.png') }}"></p>
                                 <p style="padding-top: 5px; margin-top: 0px;"><strong>Payroll</strong></p>
                             </span></a>
@@ -113,7 +113,7 @@
 					<!-- Inicio de Icono de Notificaciones -->
                     @if (Auth::user()->rol == 'admin' || Auth::user()->rol == 'secretary')
                         <div class="col-md-2 col-xs-6 col-sm-2 estilo">
-                            <a href="" onclick="location.href='/dashboard/public/reportsToday/'+today+'/'+1;return false;" style="text-decoration: none; color: inherit; outline: 0; margin-top: 20px;"><span class="text-center">
+                            <a href="" onclick="location.href='/reportsToday/'+today+'/'+1;return false;" style="text-decoration: none; color: inherit; outline: 0; margin-top: 20px;"><span class="text-center">
                                 <p style="margin-botttom: 0px; padding-bottom: 0px;"><img src="{{ asset('images/icons/icon11.png') }}"></p>
                                 <p style="padding-top: 5px; margin-top: 0px;"><strong>Reports</strong></p>
                             </span></a>
