@@ -98,7 +98,8 @@
                             <div class="col-2">
                                 <ul class="pagination">
                                     <li class="page-item">
-                                        <a class="page-link" href="/dashboard/public/date_confirm/+{{$previous}}" aria-label="Previous">
+                                        {{-- <a class="page-link" href="/dashboard/public/date_confirm/+{{$previous}}" aria-label="Previous"> --}}
+                                        <a class="page-link" href="/date_confirm/+{{$previous}}" aria-label="Previous">
                                             <span aria-hidden="true">&laquo;</span>
                                         </a>
                                     </li>
@@ -112,7 +113,8 @@
                             <div class="col-2">
                                 <ul class="pagination">
                                     <li class="page-item">
-                                        <a class="page-link" href="/dashboard/public/date_confirm/+{{$next}}" aria-label="Next">
+                                        {{-- <a class="page-link" href="/dashboard/public/date_confirm/+{{$next}}" aria-label="Next"> --}}
+                                        <a class="page-link" href="/date_confirm/+{{$next}}" aria-label="Next">
                                             <span aria-hidden="true">&raquo;</span>
                                         </a>
                                     </li>
@@ -183,7 +185,8 @@
 
                                                     alertify.confirm('Delete Dispatch', 'Do you want to delete this dispatch?', function(){alertify.success('Ok');
                                                             setTimeout(function() {
-                                                                window.location.replace('/dashboard/public/delete_dispatch/'+id+'/'+flag);
+                                                                /* window.location.replace('/dashboard/public/delete_dispatch/'+id+'/'+flag); */
+                                                                window.location.replace('/delete_dispatch/'+id+'/'+flag);
                                                             }, delayInMilliseconds)
                                                         }
                                                         , function(){ alertify.error('Cancel')});
@@ -265,13 +268,15 @@
                                                 /* INICIO AJAX PARA CAMBIAR ESTADO EN EL BACKEND */
                                                 var xhttp = new XMLHttpRequest();
 
-                                                var url = "/dashboard/public/updatedelivered/{{$rent->id}}";
+                                                /* var url = "/dashboard/public/updatedelivered/{{$rent->id}}"; */
+                                                var url = "/updatedelivered/{{$rent->id}}";
                                                 console.log(url);
                                                 xhttp.onreadystatechange = function() {
                                                     if (this.readyState == 4 && this.status == 200) {
                                                     }
                                                 };
-                                                xhttp.open("GET", "/dashboard/public/updatedelivered/{{$rent->id}}", true);
+                                                /* xhttp.open("GET", "/dashboard/public/updatedelivered/{{$rent->id}}", true); */
+                                                xhttp.open("GET", "/updatedelivered/{{$rent->id}}", true);
                                                 xhttp.send();
                                                 /* FIN AJAX PARA CAMBIAR ESTADO EN EL BACKEND */
                                             }
@@ -283,13 +288,15 @@
                                                 status2.innerHTML="Delivered";
                                                 var xhttp = new XMLHttpRequest();
 
-                                                var url = "/dashboard/public/updatePending/{{$rent->id}}";
+                                                /* var url = "/dashboard/public/updatePending/{{$rent->id}}"; */
+                                                var url = "/updatePending/{{$rent->id}}";
                                                 xhttp.onreadystatechange = function() {
                                                     if (this.readyState == 4 && this.status == 200) {
 
                                                     }
                                                 };
-                                                xhttp.open("GET", "/dashboard/public/updatePending/{{$rent->id}}", true);
+                                                /* xhttp.open("GET", "/dashboard/public/updatePending/{{$rent->id}}", true); */
+                                                xhttp.open("GET", "/updatePending/{{$rent->id}}", true);
                                                 xhttp.send();
                                                 /* INICIO AJAX PARA CAMBIAR ESTADO EN EL BACKEND */
                                             }
@@ -307,7 +314,8 @@
 
                                     alertify.confirm('Delete Dispatch', 'Do you want to delete this dispatch?', function(){alertify.success('Deleted');
                                             setTimeout(function() {
-                                                window.location.replace('/dashboard/public/delete_dispatch/'+id+'/'+flag);
+                                                /* window.location.replace('/dashboard/public/delete_dispatch/'+id+'/'+flag); */
+                                                window.location.replace('/delete_dispatch/'+id+'/'+flag);
                                             })
                                         }
                                         , function(){ alertify.error('Cancel')});
@@ -323,7 +331,8 @@
 
                                     alertify.confirm('Edit Dispatch', 'Do you want to edit this dispatch?', function(){
                                             setTimeout(function() {
-                                                window.location.replace('/dashboard/public/update/'+id);
+                                                /* window.location.replace('/dashboard/public/update/'+id); */
+                                                window.location.replace('/update/'+id);
                                             })
                                         }
                                         , function(){ alertify.error('Cancel')});
@@ -529,13 +538,15 @@
                                                 /* INICIO AJAX PARA CAMBIAR ESTADO EN EL BACKEND */
                                                 var xhttp = new XMLHttpRequest();
 
-                                                var url = "/dashboard/public/update_pickup/{{$rent->id}}";
+                                                /* var url = "/dashboard/public/update_pickup/{{$rent->id}}"; */
+                                                var url = "/update_pickup/{{$rent->id}}";
                                                 console.log(url);
                                                 xhttp.onreadystatechange = function() {
                                                     if (this.readyState == 4 && this.status == 200) {
                                                     }
                                                 };
-                                                xhttp.open("GET", "/dashboard/public/update_pickup/{{$rent->id}}", true);
+                                                /* xhttp.open("GET", "/dashboard/public/update_pickup/{{$rent->id}}", true); */
+                                                xhttp.open("GET", "/update_pickup/{{$rent->id}}", true);
                                                 xhttp.send();
                                                 /* FIN AJAX PARA CAMBIAR ESTADO EN EL BACKEND */
                                             }
@@ -548,13 +559,15 @@
 
                                                 var xhttp = new XMLHttpRequest();
 
-                                                var url = "/dashboard/public/pending_pickup/{{$rent->id}}";
+                                                /* var url = "/dashboard/public/pending_pickup/{{$rent->id}}"; */
+                                                var url = "/pending_pickup/{{$rent->id}}";
                                                 xhttp.onreadystatechange = function() {
                                                     if (this.readyState == 4 && this.status == 200) {
 
                                                     }
                                                 };
-                                                xhttp.open("GET", "/dashboard/public/pending_pickup/{{$rent->id}}", true);
+                                                /* xhttp.open("GET", "/dashboard/public/pending_pickup/{{$rent->id}}", true); */
+                                                xhttp.open("GET", "/pending_pickup/{{$rent->id}}", true);
                                                 xhttp.send();
                                                 /* INICIO AJAX PARA CAMBIAR ESTADO EN EL BACKEND */
                                             }
@@ -580,7 +593,8 @@
 
                                     alertify.confirm('Delete Dispatch', 'Do you want to delete this dispatch?', function(){alertify.success('Deleted');
                                             setTimeout(function() {
-                                                window.location.replace('/dashboard/public/delete_dispatch/'+id+'/'+flag);
+                                                /* window.location.replace('/dashboard/public/delete_dispatch/'+id+'/'+flag); */
+                                                window.location.replace('/delete_dispatch/'+id+'/'+flag);
                                             })
                                         }
                                         , function(){ alertify.error('Cancel')});

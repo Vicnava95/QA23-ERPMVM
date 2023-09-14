@@ -278,11 +278,11 @@ const dias = [
         console.log(dateStart);
         console.log(dateEnd);
         if(dateStart == dateEnd ){
-            /* window.location = "/reportsOneDay/"+dateStart+"/"+5; */
-            window.location = "/dashboard/public/reportsOneDay/"+dateStart+"/"+5;
+            window.location = "/reportsOneDay/"+dateStart+"/"+5;
+            /* window.location = "/dashboard/public/reportsOneDay/"+dateStart+"/"+5; */
         }else{
-            /* window.location = "/reportsDays/"+dateStart+"/"+dateEnd+"/"+4; */
-            window.location = "/dashboard/public/reportsDays/"+dateStart+"/"+dateEnd+"/"+4; 
+            window.location = "/reportsDays/"+dateStart+"/"+dateEnd+"/"+4;
+            /* window.location = "/dashboard/public/reportsDays/"+dateStart+"/"+dateEnd+"/"+4; */ 
         }
     });
 

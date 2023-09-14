@@ -38,7 +38,7 @@
                 <h4><a href="{{route('reportsOneDay',[$sDate,5])}}" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Go To Report"><i class="uil uil-file-bookmark-alt"></i></a></h4>
             </div>
             <div class="col text-center">
-                <h4><a href="#" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Print PDF"><i class="uil uil-print"></i></a></h4>
+                <h4 hidden><a href="#" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Print PDF"><i class="uil uil-print"></i></a></h4>
             </div>
         </div>
     </div>

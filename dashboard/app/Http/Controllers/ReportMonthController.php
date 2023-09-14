@@ -286,12 +286,14 @@ class ReportMonthController extends Controller
         //dd($projectXWeek);
 
         $longitud = sizeOf($projectXWeek);
-        //dd($projectXWeek);
 
             foreach($allProjects as $projects){
+                
                 for($l = 0; $l < $longitud; $l++){
                     if( $projectXWeek[$l]['project_FK'] == $projects->id){
                         $prueba[] = ['project_FK' => $projectXWeek[$l]['project_FK'] ,'week' => $projectXWeek[$l]['week'], 'amount' => $projectXWeek[$l]['amount'] , 'status' => $projects->status_fk];
+                    }else{
+                        $prueba[] = ['project_FK' => 0 ,'week' => 0, 'amount' => 0 ];
                     }
                 }
             }

@@ -475,7 +475,8 @@
                 <br>
                 <!-- START - Muestra el Payroll de los proyectos por categorias -->
                 {{-- <h3 class="text-center"> <a href="#" onclick="location.href='/payrollToday/'+today+'/'+today+'/'+1">Total Payroll</a></h3> --}}
-                <length class="text-center" id="titulosResponsive"> <a href="#" onclick="location.href='/dashboard/public/payrollToday/'+today+'/'+today+'/'+1">Total Payroll</a></length>
+                {{-- <length class="text-center" id="titulosResponsive"> <a href="#" onclick="location.href='/dashboard/public/payrollToday/'+today+'/'+today+'/'+1">Total Payroll</a></length> --}}
+                <length class="text-center" id="titulosResponsive"> <a href="#" onclick="location.href='/payrollToday/'+today+'/'+today+'/'+1">Total Payroll</a></length>
                 <length class="text-center" id="titulosResponsive">${{number_format($totalPayroll,2)}}</length>
                 @if ($totalPayroll != 0)
                 <div class="container-fluid-a" style="overflow-x:auto;">
@@ -906,44 +907,46 @@
                     <table class="table table-striped" border="1">
                         <tbody>
                             @foreach ($arrayProfit as $aProfit )
-                            <tr>
-                                <td style="border-color: black; " width="450">
-                                <strong>{{$aProfit['name']}}</strong>  
-                                <br>
-                                    @if ($aProfit['red'] != 0)
-                                        <span class="badge badge-danger" style="margin-bottom: 3px;">Finished</span>
-                                        {{-- <div class="circulo-red" style="float: right; margin-right: 2px;"></div> --}}
-                                    @endif
-                                    @if ($aProfit['green'] != 0)
-                                        <span class="badge badge-success" style="margin-bottom: 3px;">Started</span>
-                                        {{-- <div class="circulo-green" style="float: right; margin-right: 2px;"></div> --}}
-                                    @endif
-                                    @if ($aProfit['yellow'] != 0)
-                                        <span class="badge badge-warning" style="margin-bottom: 3px;">On going</span>
-                                        {{-- <div class="circulo-yellow" style="float: right; margin-right: 2px;"></div> --}}
-                                    @endif 
-                                    @if ($aProfit['gray'] != 0)
-                                        <span class="badge badge-secondary" style="margin-bottom: 3px;">Paused</span>
-                                        {{-- <div class="circulo-gray" style="float: right; margin-right: 2px;"></div> --}}
-                                    @endif
-                                </td>
-                                <td style="border-color: black;" width="450">
-                                    <strong>Budget:</strong> <em>${{number_format($aProfit['budget'],2)}}</em> 
-                                </td>
-                                <td style="border-color: black;" width="450">
-                                <strong>Sold:</strong> <em>${{number_format($aProfit['sold'],2)}}</em> 
-                                </td>
-                                <td style="border-color: black;" width="450">
-                                <strong>Expenses:</strong> <em>${{number_format($aProfit['expenses'],2)}}</em> 
-                                </td>
-                                {{-- <td style="border-color: black;" width="450">
-                                    <strong>Current Expenses:</strong> <em>${{$aProfit['totalCurrent']}}</em> 
-                                </td> --}}
-                                {{-- <td style="border-color: black;" width="450">
-                                <strong>Profit:</strong> <em>${{$aProfit['profit']}}</em> 
-                                </td> --}}
-                                
-                            </tr>
+                            @if($aProfit['sold'] != 0)
+                                <tr>
+                                    <td style="border-color: black; " width="450">
+                                    <strong>{{$aProfit['name']}}</strong>  
+                                    <br>
+                                        @if ($aProfit['red'] != 0)
+                                            <span class="badge badge-danger" style="margin-bottom: 3px;">Finished</span>
+                                            {{-- <div class="circulo-red" style="float: right; margin-right: 2px;"></div> --}}
+                                        @endif
+                                        @if ($aProfit['green'] != 0)
+                                            <span class="badge badge-success" style="margin-bottom: 3px;">Started</span>
+                                            {{-- <div class="circulo-green" style="float: right; margin-right: 2px;"></div> --}}
+                                        @endif
+                                        @if ($aProfit['yellow'] != 0)
+                                            <span class="badge badge-warning" style="margin-bottom: 3px;">On going</span>
+                                            {{-- <div class="circulo-yellow" style="float: right; margin-right: 2px;"></div> --}}
+                                        @endif 
+                                        @if ($aProfit['gray'] != 0)
+                                            <span class="badge badge-secondary" style="margin-bottom: 3px;">Paused</span>
+                                            {{-- <div class="circulo-gray" style="float: right; margin-right: 2px;"></div> --}}
+                                        @endif
+                                    </td>
+                                    <td style="border-color: black;" width="450">
+                                        <strong>Budget:</strong> <em>${{number_format($aProfit['budget'],2)}}</em> 
+                                    </td>
+                                    <td style="border-color: black;" width="450">
+                                    <strong>Sold:</strong> <em>${{number_format($aProfit['sold'],2)}}</em> 
+                                    </td>
+                                    <td style="border-color: black;" width="450">
+                                    <strong>Expenses:</strong> <em>${{number_format($aProfit['expenses'],2)}}</em> 
+                                    </td>
+                                    {{-- <td style="border-color: black;" width="450">
+                                        <strong>Current Expenses:</strong> <em>${{$aProfit['totalCurrent']}}</em> 
+                                    </td> --}}
+                                    {{-- <td style="border-color: black;" width="450">
+                                    <strong>Profit:</strong> <em>${{$aProfit['profit']}}</em> 
+                                    </td> --}}
+                                    
+                                </tr>
+                            @endif
                             @endforeach
                             <tr>
                             <td style="border-color: black;" width="450">

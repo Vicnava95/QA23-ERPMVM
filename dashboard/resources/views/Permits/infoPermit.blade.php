@@ -1101,7 +1101,7 @@
                                                         hidden>
                                                         <a href="{{ URL::asset('documentPermits/'.$doc->referenceDocumentPermit) }}" target="_blank">{{str_replace(array('.pdf','.png','.jpeg'),'',$doc->referenceDocumentPermit)}}</a>
                                                         <a class="btn btn-outline-danger modalIcon" data-toggle="modal" href="" data-target="#modal{{$doc->id}}" role="button"><i class="far fa-trash-alt"></i></a>
-                                                        <a class="btn btn-outline-primary modalIcon" href="{{route('createDocumentMail', [$doc->id,$permitTicket->id])}}" role="button"><i class="far fa-envelope"></i></a>
+                                                        {{-- <a class="btn btn-outline-primary modalIcon" href="{{route('createDocumentMail', [$doc->id,$permitTicket->id])}}" role="button"><i class="far fa-envelope"></i></a> --}}
 
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="modal{{$doc->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -1157,7 +1157,7 @@
                                     </div>
                                 @endif
 
-                                @if (Auth::user()->rol != 'labor')
+                                {{-- @if (Auth::user()->rol != 'labor')
                                     <hr>
                                     <h5 class="card-title text-center"><b>Mail Center</b></h5>
 
@@ -1247,7 +1247,7 @@
                                             @endif
                                         @endforeach
                                     </div>
-                                @endif
+                                @endif --}}
 
                                 <div class="text-center" hidden>
                                     <a class="btn btn-secondary btn-sm" href="{{route('updateTicket',$permitTicket)}}" role="button">Update Ticket</a>

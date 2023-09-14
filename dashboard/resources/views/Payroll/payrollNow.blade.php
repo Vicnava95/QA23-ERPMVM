@@ -35,14 +35,15 @@
                 <h4><a href="{{route('dashboard')}}" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="uil uil-arrow-left"></i></a></h4>
             </div>
             <div class="col text-center">
-                <a href="#" onclick="location.href='/reportsToday/'+today+'/'+1;return false;"><div class="btn btn btn-outline-primary btn-sm" >Go to Report</div></a>
+                {{-- <a href="#" onclick="location.href='/reportsToday/'+today+'/'+1;return false;"><div class="btn btn btn-outline-primary btn-sm" >Go to Report</div></a> --}}
                 {{-- <h4><a href="#" onclick="location.href='/dashboard/public/reportsToday/'+today+'/'+1;return false;" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Go To Report"><i class="uil uil-file-bookmark-alt"></i></a></h4> --}}
+                <h4><a href="#" onclick="location.href='/reportsToday/'+today+'/'+1;return false;" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Go To Report"><i class="uil uil-file-bookmark-alt"></i></a></h4>
             </div>
             {{-- <div class="col text-center" hidden>
                 <a href="{{route('payrollFiles')}}"><div class="btn btn-outline-danger btn-sm" >Upload Documents</div></a>
             </div> --}}
             <div class="col text-center">
-                <h4><a href="#" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Print PDF"><i class="uil uil-print"></i></a></h4>
+                <h4 hidden><a href="#" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Print PDF"><i class="uil uil-print"></i></a></h4>
             </div>
         </div>
     </div>

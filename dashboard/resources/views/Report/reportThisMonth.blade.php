@@ -471,7 +471,8 @@
 
         <!-- START - Muestra el Payroll de los proyectos por categorias -->
         {{-- <h3 class="text-center"><a href="" onclick="location.href='/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;">Total Payroll</a></h3> --}}
-        <length class="text-center" id="titulosResponsive"><a href="" onclick="location.href='/dashboard/public/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;">Total Payroll</a></length>
+        {{-- <length class="text-center" id="titulosResponsive"><a href="" onclick="location.href='/dashboard/public/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;">Total Payroll</a></length> --}}
+        <length class="text-center" id="titulosResponsive"><a href="" onclick="location.href='/payrollThisMonth/'+startMonth+'/'+endtMonth+'/'+6;return false;">Total Payroll</a></length>
         <length class="text-center" id="titulosResponsive">${{number_format($totalPayroll,2)}}</length>
         @if ($totalPayroll != 0)
         <div class="container-fluid-a" style="overflow-x:auto;">
