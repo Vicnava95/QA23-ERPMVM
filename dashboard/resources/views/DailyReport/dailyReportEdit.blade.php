@@ -44,7 +44,7 @@
 
         </div>
         <div class="col text-right">
-            @if (Auth::user()->id == 1 || Auth::user()->id == 5)
+            @if (Auth::user()->id == 1 || Auth::user()->id == 5 || Auth::user()->id == 10 || Auth::user()->id == 11 || Auth::user()->id == 12 || Auth::user()->id == 13)
                 <h4><a href="{{route('allDailyReport')}}"><div class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="All Reports"><i class="uil uil-file-bookmark-alt"></i></div></a></h4>
             @endif
         </div>

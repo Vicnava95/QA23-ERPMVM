@@ -34,6 +34,7 @@ class PayrollReportDatesController extends Controller
         }else{
             $startDate = $stDate;
             $endDate = $enDate;
+            //dd($startDate,$endDate);
         }
         
 
@@ -176,7 +177,7 @@ class PayrollReportDatesController extends Controller
                                                     'allProjects','n','totales','arrayIdProjects','totalPayroll','montoCategori'));
                 break;
             case "4":
-                return view('Payroll.payrollOneDay',compact('startDate','diasX','array','allCategorie',
+                return view('Payroll.payrollOneDay',compact('startDate','endDate','diasX','array','allCategorie',
                                                     'allProjects','n','totales','arrayIdProjects','totalPayroll','montoCategori','sDate'));
                 break;
             case "5":

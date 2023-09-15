@@ -36,13 +36,13 @@
                     <span style="font-size: 130%;"><a href="{{route('dashboard2')}}" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="uil uil-arrow-left"></i></a></span>
                 @endif
 
-                @if (Auth::user()->id == 1 || Auth::user()->id == 7 || Auth::user()->id == 8 || Auth::user()->id == 5)
+                @if (Auth::user()->id == 1 || Auth::user()->id == 7 || Auth::user()->id == 8 || Auth::user()->id == 5 || Auth::user()->id == 10 || Auth::user()->id == 11 || Auth::user()->id == 12 || Auth::user()->id == 13)
                     <span style="font-size: 130%;" class="searchbardesktop"><a href="{{route('dailyReport')}}" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Add Daily Report">+ Report</a></span>
                 @else
                     <span style="font-size: 130%;" class="searchbardesktop"><a href="{{route('activeDailyReport')}}" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Daily Reports">Reports</a></span>
                 @endif
 
-                @if (Auth::user()->id == 1 || Auth::user()->id == 7 || Auth::user()->id == 8 || Auth::user()->id == 5)
+                @if (Auth::user()->id == 1 || Auth::user()->id == 7 || Auth::user()->id == 8 || Auth::user()->id == 5 || Auth::user()->id == 10 || Auth::user()->id == 11 || Auth::user()->id == 12 || Auth::user()->id == 13)
                     <span style="font-size: 130%;" class="searchbarmobile"><a href="{{route('dailyReport')}}" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Report">+ Report</a></span>
                 @else
                     <span style="font-size: 130%;" class="searchbarmobile"><a href="{{route('activeDailyReport')}}" class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Report">+ Report</a></span>

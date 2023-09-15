@@ -19,7 +19,7 @@
 <div class="container" style="margin-top: 20px;">
     <div class="row">
         <div class="col">
-        @if (Auth::user()->id == 1 || Auth::user()->id == 5)
+        @if (Auth::user()->id == 1 || Auth::user()->id == 5 || Auth::user()->id == 10 || Auth::user()->id == 11 || Auth::user()->id == 12 || Auth::user()->id == 13)
         <h4 style="font-size: 130%;"><a href="{{route('activeDailyReport')}}"><div class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="uil uil-arrow-left"></i></div></a></h4>
             {{-- <a href="{{route('activeDailyReport')}}"><div class="btn btn-outline-secondary btn-sm" >Go Back</div></a> --}}
         @endif
@@ -32,7 +32,7 @@
 
         </div>
         <div class="col text-right">
-        @if (Auth::user()->id == 1 || Auth::user()->id == 5)
+        @if (Auth::user()->id == 1 || Auth::user()->id == 5 || Auth::user()->id == 10 || Auth::user()->id == 11 || Auth::user()->id == 12 || Auth::user()->id == 13)
             <h4 style="font-size: 130%;"><a href="{{route('dailyReport')}}"><div class="badge badgeERPButton" data-toggle="tooltip" data-placement="bottom" title="New Report">+ Report</div></a></h4>
             {{-- <a href="{{route('dailyReport')}}"><div class="btn btn-outline-secondary btn-sm" >New Report</div></a> --}}
         @endif
