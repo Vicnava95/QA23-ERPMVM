@@ -19,12 +19,12 @@
 //Route::get('dispatchcenter', function(){
 //    return view('DispachCenter/dispatch_center');
 //});
-/** Los siguientes enlaces no requieren inicio de sesión */
+/** Los siguientes enlaces no requieren inicio de sesi锟斤拷n */
 // Formulario de Quote https://mvm-machinery.com/dashboard/public/Quote 
 Route::get('Quote','QuoteRequestController@create')->name('quoteRequest');
 Route::post('postQuoteRequest','QuoteRequestController@store')->name('postQuoteRequest');
 
-//Conexión con API de Pipedrive
+//Conexi锟斤拷n con API de Pipedrive
 Route::get('createClientWeb/{nameForm}/{emailForm}/{phoneForm}/{addressForm}/{serviceForm}/{landingNameid}','ClientwebController@store')->name('clientWeb.store');
 
 //Consulta de los permisos de un proyecto, requiere 
@@ -33,7 +33,7 @@ Route::get('Permitupdates/{email}','PermitTicketController@dashboardClient')->na
 
 Route::get('reviewAPI/{id}','ContactController@reviewFunnelAPI')->name('reviewFunnelAPI');
 
-//Formulario para que Marvin realice una renta de máquina
+//Formulario para que Marvin realice una renta de m锟斤拷quina
 Route::get('Rental','RentRequestController@rentalClientForm')->name('rentalClientForm');
 Route::get('getMachinerysRental','RentRequestController@showMachinery')->name('getMachinerysRental');
 Route::post('postRentalForm','RentRequestController@storeRentalForm')->name('storeRentalForm');
@@ -101,7 +101,7 @@ Route::middleware(['admin'])->group(function (){
     Route::get('chooseMainService/{project}','ProjectController@chooseMainService')->name('chooseMainService');
     //PROJECT TRACKER
     Route::get('projectTracker/{project}','ProjectController@projectTracker')->name('project.projectTracker');
-    //MUESTRAN LOS PROYECTOS FILTRADOS Y LA INFORMACIÓN DETALLADA 
+    //MUESTRAN LOS PROYECTOS FILTRADOS Y LA INFORMACI锟�0锟�7N DETALLADA 
     Route::get('activeProjects','ProjectController@activeProjects')->name('project.active');
     Route::get('purchasesP/{id}', 'PurchaseController@findPurchases')->name('purchases.findPurchases');
     Route::get('moreInfo/{id1}', 'ProjectController@moreInfoProject')->name('project.moreInfo');
@@ -237,6 +237,7 @@ Route::middleware(['admin'])->group(function (){
     Route::post('storePermit','PermitTicketController@store')->name('ticketStore');
     Route::get('permits','PermitTicketController@index')->name('showPermits');
     Route::get('updateStage/{idPermitTicket}/{id}','PermitTicketController@updateStage')->name('updateStage'); 
+    Route::get('updateStagePermit/{idPermitTicket}/{id}','PermitTicketController@updateStagePermit')->name('updateStagePermit'); 
     Route::get('infoPermit/{idPermitTicket}', 'PermitTicketController@show')->name('infoPermit');
     Route::patch('updateComments/{permitTicket}','PermitTicketController@updateComents')->name('updateComments');
     Route::get('updateCheckBox/{idDocument}/{val}','PermitTicketController@updateCheckBoxDocument')->name('updateCheckBox');

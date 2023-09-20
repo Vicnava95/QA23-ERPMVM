@@ -284,6 +284,17 @@ class PermitTicketController extends Controller
         return redirect()->route('showPermits'); 
     }
 
+    public function updateStagePermit($idPermitTicket,$id){
+        $permitTicket = PermitTicket::find($idPermitTicket);
+        $today = Carbon::now()->format('m/d/Y');
+        $permitTicket->update([
+            'permitStage_fk' => $id,
+            'dateStage' => $today
+        ]);
+        $permitTicket->save();
+        return redirect()->back(); 
+    }
+
     /** Se muestran todos los permisos, este template ya no se muestra en el flujo del ERP */
     public function allPermits(){
         $permitStages = Permitstage::all();

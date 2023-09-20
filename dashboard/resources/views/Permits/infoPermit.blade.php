@@ -394,7 +394,7 @@
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                 <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
-                                                                <a rol="button" href="{{route('lastComment',$permitTicket)}}" class="btn btn-success">Yes</a>
+                                                                <a rol="button" href="{{route('updateStagePermit',[$permitTicket,6])}}" class="btn btn-success">Yes</a>
                                                                 </div>
                                                             </div>
                                                             </div>
