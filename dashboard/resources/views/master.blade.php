@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
     <link rel="apple-touch-icon" href="{{ asset('images/apple-touch-icon.png') }}">
     @yield('title')
